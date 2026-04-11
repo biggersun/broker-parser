@@ -1,0 +1,85 @@
+{
+  "accountCode": "M000002",
+  "clientName": "USER B",
+  "period": "2025-07-22",
+  "statementDate": "2025-07-22",
+  "transactions": [
+    {
+      "transactionDate": "2025-07-22",
+      "settlementDate": "2025-07-22",
+      "refNo": "47026058",
+      "stockCode": "009887",
+      "stockName": "NANJING LEADS BIOLABS CO LTD-B 南京維立志博生物科技股份有限 公司",
+      "transactionType": "IPO_FEE",
+      "amount": -88,
+      "fee": 88,
+      "currency": "HKD",
+      "description": "IPO 新股認購NANJING LEADS BIOLABS CO LTD-B 南京維立志博生物科技股份有限 支付  公司 (9887) HANDLING FEE 手續費"
+    },
+    {
+      "transactionDate": "2025-07-22",
+      "settlementDate": "2025-07-22",
+      "refNo": "47112788",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "SELL",
+      "quantity": 1854.73,
+      "price": 11.3534,
+      "amount": 21057.49,
+      "currency": "HKD",
+      "description": "贖回 輝立港元貨幣市場基金 REDEEM 1854.73 PHILLIP HKD MMF @11.3534"
+    }
+  ],
+  "ipo": [
+    {
+      "transactionDate": "2025-07-22",
+      "settlementDate": "2025-07-22",
+      "stockCode": "009887",
+      "stockName": "NANJING LEADS BIOLABS CO LTD-B 南京維立志博生物科技股份有限 公司",
+      "quantity": 20000,
+      "price": 35,
+      "amount": 700000,
+      "currency": "HKD",
+      "description": "IPO 新股認購NANJING LEADS BIOLABS CO LTD-B 南京維立志博生物科技股份有限 支付  公司 (9887) Apply Deposit 10% 申請按金 20,000 @35",
+      "type": "apply"
+    }
+  ],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": -41280.8,
+      "marketPrice": 1,
+      "marketValue": -41280.8,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "000200",
+      "assetCategory": "Stock",
+      "quantity": 2,
+      "marketPrice": 5.13,
+      "marketValue": 10.26,
+      "currency": "HKD",
+      "description": "MELCO INT'L DEV 新濠國際發展"
+    },
+    {
+      "symbol": "009606",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 329.2,
+      "marketValue": 65840,
+      "currency": "HKD",
+      "description": "DUALITYBIO-B 映恩生物－Ｂ"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 0,
+      "marketPrice": 11.3534,
+      "marketValue": 0,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

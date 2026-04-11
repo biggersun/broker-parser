@@ -1,0 +1,42 @@
+{
+  "accountCode": "M000002",
+  "clientName": "USER B",
+  "period": "2026-01-09",
+  "statementDate": "2026-01-09",
+  "transactions": [
+    {
+      "transactionDate": "2026-01-09",
+      "settlementDate": "2026-01-08",
+      "refNo": "67363358",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "BUY",
+      "quantity": 4037.16,
+      "price": 11.4559,
+      "amount": -46249.3,
+      "currency": "HKD",
+      "description": "Reverse 贖回 輝立港元貨幣市場基金 REDEEM 4037.16 PHILLIP HKD MMF 支付 @11.4559"
+    }
+  ],
+  "ipo": [],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 109993.71,
+      "marketPrice": 1.0,
+      "marketValue": 109993.71,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1.0,
+      "marketValue": -0.3,
+      "currency": "USD",
+      "description": "Cash Balance"
+    }
+  ]
+}

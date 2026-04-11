@@ -1,0 +1,173 @@
+{
+  "accountInfo": {
+    "accountCode": "M000002",
+    "clientName": "USER B",
+    "statementDate": "23/01/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "23/01/26",
+      "settleDate": "23/01/26",
+      "refNo": "68290540",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購BUSY MING GROUP CO., LTD. 湖南鳴鳴很忙商業連鎖股份有限公司 支付 (1768) Apply Deposit 10% 申請按金 7,000 @236.6",
+      "debit": 167290.28
+    },
+    {
+      "tradeDate": "23/01/26",
+      "settleDate": "23/01/26",
+      "refNo": "68290541",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購BUSY MING GROUP CO., LTD. 湖南鳴鳴很忙商業連鎖股份有限公司 支付 (1768) APPLY 申請孖展 7,000 @236.6",
+      "debit": 1505612.5
+    },
+    {
+      "tradeDate": "23/01/26",
+      "settleDate": "23/01/26",
+      "refNo": "68290542",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購BUSY MING GROUP CO., LTD. 湖南鳴鳴很忙商業連鎖股份有限公司 收入 (1768) 90% LOAN 孖展 0% 3 DAYS 日",
+      "credit": 1505612.5
+    },
+    {
+      "tradeDate": "23/01/26",
+      "settleDate": "23/01/26",
+      "refNo": "68290543",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購BUSY MING GROUP CO., LTD. 湖南鳴鳴很忙商業連鎖股份有限公司 支付 (1768) HANDLING FEE 手續費",
+      "debit": 88
+    },
+    {
+      "tradeDate": "23/01/26",
+      "settleDate": "27/01/26",
+      "refNo": "28532800",
+      "transType": "Sell",
+      "particulars": "LONGCHEER 100 32.2000 3,220.00 股票 賣出 龍旗科技/XHKG/009611 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 4.00 0.09 3.00 0.18",
+      "credit": 3137.73
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -57413.55,
+      "marketPrice": 1,
+      "marketValue": -57413.55,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1,
+      "marketValue": -0.3,
+      "currency": "USD"
+    },
+    {
+      "symbol": "000100",
+      "name": "MINIMAX-WP",
+      "assetType": "Stock",
+      "quantity": 20,
+      "marketPrice": 376,
+      "marketValue": 7520,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "000200",
+      "name": "MELCO INT'L DEV 新濠國際發展",
+      "assetType": "Stock",
+      "quantity": 2,
+      "marketPrice": 4.43,
+      "marketValue": 8.86,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "002259",
+      "name": "ZIJIN GOLD INTL 紫金黃金國際",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 205.8,
+      "marketValue": 20580,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006082",
+      "name": "BIREN TECH 壁仞科技",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 35.8,
+      "marketValue": 7160,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006978",
+      "name": "IMMUNOTECH-B 永泰生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 5,
+      "marketPrice": 2.45,
+      "marketValue": 12.25,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009606",
+      "name": "DUALITYBIO-B 映恩生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 334.6,
+      "marketValue": 66920,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009611",
+      "name": "LONGCHEER 龍旗科技",
+      "assetType": "Stock",
+      "quantity": 0,
+      "marketPrice": 31.1,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "PDD",
+      "name": "PDD HOLDINGS INC 拼多多",
+      "assetType": "Stock",
+      "quantity": 15,
+      "marketPrice": 106.02,
+      "marketValue": 1590.3,
+      "currency": "USD",
+      "extras": {
+        "product": "Equity",
+        "market": "XNGS"
+      }
+    }
+  ]
+}

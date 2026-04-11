@@ -1,0 +1,148 @@
+{
+  "accountInfo": {
+    "accountCode": "M000002",
+    "clientName": "USER B",
+    "statementDate": "10/12/25"
+  },
+  "transactions": [
+    {
+      "tradeDate": "10/12/25",
+      "settleDate": "12/12/25",
+      "refNo": "27589689",
+      "transType": "Sell",
+      "particulars": "BAO PHARMA-B 100 52.6000 5,260.00 股票 賣出 寶濟藥業－Ｂ/XHKG/002659 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 6.00 0.15 3.00 0.30",
+      "credit": 5175.55,
+      "sourceLines": [375, 386, 399, 411, 423]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 5715.84,
+      "marketPrice": 1,
+      "marketValue": 5715.84,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1,
+      "marketValue": -0.3,
+      "currency": "USD"
+    },
+    {
+      "symbol": "000200",
+      "name": "MELCO INT'L DEV 新濠國際發展",
+      "assetType": "Stock",
+      "quantity": 2,
+      "marketPrice": 4.74,
+      "marketValue": 9.48,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "002259",
+      "name": "ZIJIN GOLD INTL 紫金黃金國際",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 142.9,
+      "marketValue": 14290,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "002659",
+      "name": "BAO PHARMA-B 寶濟藥業－Ｂ",
+      "assetType": "Stock",
+      "quantity": 0,
+      "marketPrice": 63,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "003690",
+      "name": "MEITUAN-W 美團－Ｗ",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 100,
+      "marketValue": 10000,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006978",
+      "name": "IMMUNOTECH-B 永泰生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 5,
+      "marketPrice": 2.86,
+      "marketValue": 14.3,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009606",
+      "name": "DUALITYBIO-B 映恩生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 312,
+      "marketValue": 62400,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 8948.33,
+      "marketPrice": 11.4369,
+      "marketValue": 102341.16,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    },
+    {
+      "symbol": "PDD",
+      "name": "PDD HOLDINGS INC 拼多多",
+      "assetType": "Stock",
+      "quantity": 15,
+      "marketPrice": 117.14,
+      "marketValue": 1757.1,
+      "currency": "USD",
+      "extras": {
+        "product": "Equity",
+        "market": "XNGS"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 4,
+    "parseTimeMs": 2996,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

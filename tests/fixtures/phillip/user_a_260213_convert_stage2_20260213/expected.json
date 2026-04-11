@@ -1,0 +1,28 @@
+{
+  "accountCode": "M000004",
+  "clientName": "USER G",
+  "period": "2026-02-13",
+  "statementDate": "2026-02-13",
+  "transactions": [],
+  "ipo": [],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 44006.06,
+      "marketPrice": 1,
+      "marketValue": 44006.06,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": 23.81,
+      "marketPrice": 1,
+      "marketValue": 23.81,
+      "currency": "USD",
+      "description": "Cash Balance"
+    }
+  ]
+}

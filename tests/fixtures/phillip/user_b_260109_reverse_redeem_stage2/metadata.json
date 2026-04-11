@@ -1,0 +1,10 @@
+{
+  "description": "M000002 2026-01-09 日结单，Reverse 贖回（撤销赎回）应解析为 BUY 而非 SELL。根因：parser 的 REDEEM 规则优先匹配导致 'Reverse 贖回' 被错误识别为 SELL，产生负数 SELL 记录，严重高估已实现盈亏。",
+  "createdAt": "2026-03-07T00:50:00.000Z",
+  "source": "./data/raw/冯嘉琳_M000002/daily/2026/01/M000002_20260109.pdf",
+  "bugReport": {
+    "symptom": "Transaction id=1190 (production DB) SELL type with amount=-46249.30，FIFO 计算出虚假盈利 46249 HKD",
+    "rootCause": "Reverse 贖回 是撤销赎回操作（Payment/Debit），钱重新投入基金 = BUY。但 CATEGORY_RULES 中 '贖回/REDEEM' 规则优先匹配，误将其分类为 REDEEM → SELL",
+    "fix": "在 CATEGORY_RULES 中新增 REVERSE_REDEEM 规则（优先级高于 REDEEM），匹配 'Reverse' 前缀的贖回，映射为 BUY"
+  }
+}

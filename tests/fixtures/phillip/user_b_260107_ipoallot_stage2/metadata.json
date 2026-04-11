@@ -1,0 +1,11 @@
+{
+  "name": "fjl_260107_ipoallot_stage2",
+  "description": "M000002 2026-01-07 日结单，包含 MINIMAX GROUP INC. IPO 获配记录",
+  "sourceFile": "M000002_20260107.pdf",
+  "createdAt": "2026-01-31",
+  "focus": [
+    "IPO 获配股票代码解析（3位数代码 100 → 000100）",
+    "IPO 获配股票名称解析",
+    "IPO 获配股数解析（从 獲配股數 20 提取）"
+  ]
+}

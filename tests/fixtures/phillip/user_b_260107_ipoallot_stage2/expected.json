@@ -1,0 +1,140 @@
+{
+  "accountCode": "M000002",
+  "clientName": "USER B",
+  "period": "2026-01-07",
+  "statementDate": "2026-01-07",
+  "transactions": [
+    {
+      "transactionDate": "2026-01-07",
+      "settlementDate": "2026-01-07",
+      "refNo": "66590398",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "BUY",
+      "quantity": 4037.16,
+      "price": 11.4554,
+      "amount": -46247.28,
+      "currency": "HKD",
+      "description": "購買 輝立港元貨幣市場基金 SUB 4037.16 PHILLIP HKD MMF @11.4554"
+    },
+    {
+      "transactionDate": "2026-01-07",
+      "settlementDate": "2026-01-07",
+      "refNo": "66632192",
+      "stockCode": "000100",
+      "stockName": "MINIMAX GROUP INC.",
+      "transactionType": "BUY",
+      "quantity": 20,
+      "price": 165,
+      "amount": -3333.28,
+      "currency": "HKD",
+      "description": "IPO 新股認購 MINIMAX GROUP INC. (100) ALLOTED AMOUNT 獲配金額 20 支付 @165"
+    }
+  ],
+  "ipo": [
+    {
+      "transactionDate": "2026-01-07",
+      "settlementDate": "2026-01-07",
+      "stockCode": "000100",
+      "stockName": "MINIMAX GROUP INC.",
+      "quantity": 20,
+      "price": 165,
+      "amount": 3333.28,
+      "currency": "HKD",
+      "description": "IPO 新股認購 MINIMAX GROUP INC. (100) ALLOTED AMOUNT 獲配金額 20 支付 @165",
+      "type": "allot"
+    }
+  ],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 63832.41,
+      "marketPrice": 1,
+      "marketValue": 63832.41,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1,
+      "marketValue": -0.3,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "000100",
+      "assetCategory": "Stock",
+      "quantity": 20,
+      "marketPrice": 165,
+      "marketValue": 3300,
+      "currency": "HKD",
+      "description": "MINIMAX GROUP INC."
+    },
+    {
+      "symbol": "000200",
+      "assetCategory": "Stock",
+      "quantity": 2,
+      "marketPrice": 4.23,
+      "marketValue": 8.46,
+      "currency": "HKD",
+      "description": "MELCO INT'L DEV 新濠國際發展"
+    },
+    {
+      "symbol": "002259",
+      "assetCategory": "Stock",
+      "quantity": 100,
+      "marketPrice": 147.2,
+      "marketValue": 14720,
+      "currency": "HKD",
+      "description": "ZIJIN GOLD INTL 紫金黃金國際"
+    },
+    {
+      "symbol": "006082",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 33.12,
+      "marketValue": 6624,
+      "currency": "HKD",
+      "description": "BIREN TECH 壁仞科技"
+    },
+    {
+      "symbol": "006978",
+      "assetCategory": "Stock",
+      "quantity": 5,
+      "marketPrice": 2.78,
+      "marketValue": 13.9,
+      "currency": "HKD",
+      "description": "IMMUNOTECH-B 永泰生物－Ｂ"
+    },
+    {
+      "symbol": "009606",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 348.6,
+      "marketValue": 69720,
+      "currency": "HKD",
+      "description": "DUALITYBIO-B 映恩生物－Ｂ"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 4037.16,
+      "marketPrice": 11.4554,
+      "marketValue": 46247.28,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    },
+    {
+      "symbol": "PDD",
+      "assetCategory": "Stock",
+      "quantity": 15,
+      "marketPrice": 122.66,
+      "marketValue": 1839.9,
+      "currency": "USD",
+      "description": "PDD HOLDINGS INC 拼多多"
+    }
+  ]
+}

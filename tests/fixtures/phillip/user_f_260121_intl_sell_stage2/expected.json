@@ -1,0 +1,82 @@
+{
+  "accountCode": "M000005",
+  "clientName": "USER F",
+  "period": "2026-01-21",
+  "statementDate": "2026-01-21",
+  "transactions": [
+    {
+      "transactionDate": "2026-01-21",
+      "settlementDate": "2026-01-21",
+      "refNo": "68114085",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "SELL",
+      "quantity": 3870.5,
+      "price": 11.4657,
+      "amount": 44377.99,
+      "currency": "HKD",
+      "description": "贖回 輝立港元貨幣市場基金 REDEEM 3870.5 PHILLIP HKD MMF @11.4657"
+    },
+    {
+      "transactionDate": "2026-01-21",
+      "settlementDate": "2026-01-23",
+      "refNo": "28459252",
+      "stockCode": "002259",
+      "stockName": "ZIJIN GOLD INTL 紫金黃金國際",
+      "transactionType": "SELL",
+      "quantity": 100,
+      "price": 185,
+      "amount": 18401.42,
+      "currency": "HKD",
+      "description": "ZIJIN GOLD INTL 100 185.0000 18,500.00 股票 賣出 紫金黃金國際/XHKG/002259 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 19.00 0.53 3.00 1.05"
+    }
+  ],
+  "ipo": [],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 64220.61,
+      "marketPrice": 1,
+      "marketValue": 64220.61,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": 66.21,
+      "marketPrice": 1,
+      "marketValue": 66.21,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "002259",
+      "assetCategory": "Stock",
+      "quantity": 0,
+      "marketPrice": 187.5,
+      "marketValue": 0,
+      "currency": "HKD",
+      "description": "ZIJIN GOLD INTL 紫金黃金國際"
+    },
+    {
+      "symbol": "006082",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 35.84,
+      "marketValue": 7168,
+      "currency": "HKD",
+      "description": "BIREN TECH 壁仞科技"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 0,
+      "marketPrice": 11.4657,
+      "marketValue": 0,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

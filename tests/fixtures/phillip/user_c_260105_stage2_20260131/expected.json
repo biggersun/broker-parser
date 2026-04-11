@@ -1,0 +1,124 @@
+{
+  "accountCode": "M000006",
+  "clientName": "USER C",
+  "period": "2026-01-05",
+  "statementDate": "2026-01-05",
+  "transactions": [
+    {
+      "transactionDate": "2026-01-05",
+      "settlementDate": "2026-01-05",
+      "refNo": "65323253",
+      "stockCode": "002513",
+      "stockName": "KNOWLEDGE ATLAS TECHNOLOGY JOINT STOCK CO LTD 北京智 譜華章科技股份有限公司",
+      "transactionType": "IPO_FEE",
+      "amount": -28,
+      "fee": 28,
+      "currency": "HKD",
+      "description": "IPO 新股認購KNOWLEDGE ATLAS TECHNOLOGY JOINT STOCK CO LTD 北京智 支付 譜華章科技股份有限公司 (2513) HANDLING FEE 手續費"
+    },
+    {
+      "transactionDate": "2026-01-05",
+      "settlementDate": "2026-01-05",
+      "refNo": "65485749",
+      "stockCode": "002675",
+      "stockName": "SHENZHEN EDGE MEDICAL CO., LTD. 深圳市精鋒醫療科技股份有限 公司",
+      "transactionType": "IPO_FEE",
+      "amount": -28,
+      "fee": 28,
+      "currency": "HKD",
+      "description": "IPO 新股認購SHENZHEN EDGE MEDICAL CO., LTD. 深圳市精鋒醫療科技股份有限 支付 公司 (2675) HANDLING FEE 手續費"
+    },
+    {
+      "transactionDate": "2026-01-05",
+      "settlementDate": "2026-01-05",
+      "refNo": "65663428",
+      "stockCode": "009903",
+      "stockName": "SHANGHAI ILUVATAR COREX SEMICONDUCTOR CO LTD 上海天 數智芯半導體股份有限公司",
+      "transactionType": "IPO_FEE",
+      "amount": -28,
+      "fee": 28,
+      "currency": "HKD",
+      "description": "IPO 新股認購SHANGHAI ILUVATAR COREX SEMICONDUCTOR CO LTD 上海天 支付 數智芯半導體股份有限公司 (9903) HANDLING FEE 手續費"
+    },
+    {
+      "transactionDate": "2026-01-05",
+      "settlementDate": "2026-01-05",
+      "refNo": "65799383",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "SELL",
+      "quantity": 1181.05,
+      "price": 11.4543,
+      "amount": 13528.1,
+      "currency": "HKD",
+      "description": "贖回 輝立港元貨幣市場基金 REDEEM 1181.05 PHILLIP HKD MMF @11.4543"
+    }
+  ],
+  "ipo": [
+    {
+      "transactionDate": "2026-01-05",
+      "settlementDate": "2026-01-05",
+      "stockCode": "002513",
+      "stockName": "KNOWLEDGE ATLAS TECHNOLOGY JOINT STOCK CO LTD 北京智 譜華章科技股份有限公司",
+      "quantity": 400,
+      "price": 116.2,
+      "amount": 46480,
+      "currency": "HKD",
+      "description": "IPO 新股認購KNOWLEDGE ATLAS TECHNOLOGY JOINT STOCK CO LTD 北京智 支付 譜華章科技股份有限公司 (2513) Apply Deposit 10% 申請按金 400 @116.2",
+      "type": "apply"
+    },
+    {
+      "transactionDate": "2026-01-05",
+      "settlementDate": "2026-01-05",
+      "stockCode": "002675",
+      "stockName": "SHENZHEN EDGE MEDICAL CO., LTD. 深圳市精鋒醫療科技股份有限 公司",
+      "quantity": 1000,
+      "price": 43.24,
+      "amount": 43240,
+      "currency": "HKD",
+      "description": "IPO 新股認購SHENZHEN EDGE MEDICAL CO., LTD. 深圳市精鋒醫療科技股份有限 支付 公司 (2675) Apply Deposit 10% 申請按金 1,000 @43.24",
+      "type": "apply"
+    },
+    {
+      "transactionDate": "2026-01-05",
+      "settlementDate": "2026-01-05",
+      "stockCode": "009903",
+      "stockName": "SHANGHAI ILUVATAR COREX SEMICONDUCTOR CO LTD 上海天 數智芯半導體股份有限公司",
+      "quantity": 300,
+      "price": 144.6,
+      "amount": 43380,
+      "currency": "HKD",
+      "description": "IPO 新股認購SHANGHAI ILUVATAR COREX SEMICONDUCTOR CO LTD 上海天 支付 數智芯半導體股份有限公司 (9903) Apply Deposit 10% 申請按金 300 @144.6",
+      "type": "apply"
+    }
+  ],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 499.95,
+      "marketPrice": 1,
+      "marketValue": 499.95,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "006082",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 33.2,
+      "marketValue": 6640,
+      "currency": "HKD",
+      "description": "BIREN TECH 壁仞科技"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 589.94,
+      "marketPrice": 11.4543,
+      "marketValue": 6757.35,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

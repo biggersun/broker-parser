@@ -1,0 +1,12 @@
+{
+  "name": "lcf_260120_refund_stage2_20260131",
+  "description": "Stage2 规则格式化测试: lcf_260120_refund",
+  "stage1Source": "lcf_260120_refund_20260131",
+  "createdAt": "2026-01-31",
+  "formatterType": "rule",
+  "inputTransactions": 2,
+  "inputHoldings": 3,
+  "outputTransactions": 0,
+  "outputIpo": 1,
+  "outputSnapshots": 3
+}

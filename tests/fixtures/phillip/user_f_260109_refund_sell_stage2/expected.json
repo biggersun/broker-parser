@@ -1,0 +1,104 @@
+{
+  "accountCode": "M000005",
+  "clientName": "USER F",
+  "period": "2026-01-09",
+  "statementDate": "2026-01-09",
+  "transactions": [
+    {
+      "transactionDate": "2026-01-09",
+      "settlementDate": "2026-01-08",
+      "refNo": "67363457",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "BUY",
+      "quantity": 2301.76,
+      "price": 11.4559,
+      "amount": -26368.73,
+      "currency": "HKD",
+      "description": "Reverse 贖回 輝立港元貨幣市場基金 REDEEM 2301.76 PHILLIP HKD MMF 支付 @11.4559"
+    },
+    {
+      "transactionDate": "2026-01-09",
+      "settlementDate": "2026-01-09",
+      "refNo": "67371228",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "BUY",
+      "quantity": 1346.36,
+      "price": 11.4567,
+      "amount": -15424.84,
+      "currency": "HKD",
+      "description": "購買 輝立港元貨幣市場基金 SUB 1346.36 PHILLIP HKD MMF @11.4567"
+    },
+    {
+      "transactionDate": "2026-01-09",
+      "settlementDate": "2026-01-13",
+      "refNo": "28180639",
+      "stockCode": "000100",
+      "stockName": "MINIMAX-WP",
+      "transactionType": "SELL",
+      "quantity": 20,
+      "price": 288,
+      "amount": 5675.5,
+      "currency": "HKD",
+      "description": "MINIMAX-WP 20 288.0000 5,760.00 股票 賣出 /XHKG/000100 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 6.00 0.17 3.00 0.33"
+    }
+  ],
+  "ipo": [],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 30364.56,
+      "marketPrice": 1,
+      "marketValue": 30364.56,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": 66.21,
+      "marketPrice": 1,
+      "marketValue": 66.21,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "000100",
+      "assetCategory": "Stock",
+      "quantity": 0,
+      "marketPrice": 345,
+      "marketValue": 0,
+      "currency": "HKD",
+      "description": "MINIMAX-WP"
+    },
+    {
+      "symbol": "002259",
+      "assetCategory": "Stock",
+      "quantity": 100,
+      "marketPrice": 150.7,
+      "marketValue": 15070,
+      "currency": "HKD",
+      "description": "ZIJIN GOLD INTL 紫金黃金國際"
+    },
+    {
+      "symbol": "006082",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 34.06,
+      "marketValue": 6812,
+      "currency": "HKD",
+      "description": "BIREN TECH 壁仞科技"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 1346.36,
+      "marketPrice": 11.4567,
+      "marketValue": 15424.84,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

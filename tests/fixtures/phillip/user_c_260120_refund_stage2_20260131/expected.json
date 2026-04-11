@@ -1,0 +1,37 @@
+{
+  "accountCode": "M000006",
+  "clientName": "USER C",
+  "period": "2026-01-20",
+  "statementDate": "2026-01-20",
+  "transactions": [],
+  "ipo": [],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 1439.36,
+      "marketPrice": 1,
+      "marketValue": 1439.36,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "006082",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 36.9,
+      "marketValue": 7380,
+      "currency": "HKD",
+      "description": "BIREN TECH 壁仞科技"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 1667.54,
+      "marketPrice": 11.4647,
+      "marketValue": 19117.85,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

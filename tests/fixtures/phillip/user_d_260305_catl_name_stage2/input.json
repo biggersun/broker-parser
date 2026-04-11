@@ -1,0 +1,123 @@
+{
+  "accountInfo": {
+    "accountCode": "M000003",
+    "clientName": "USER D",
+    "statementDate": "05/03/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "05/03/26",
+      "settleDate": "05/03/26",
+      "refNo": "72081682",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 ALSCO POOLING SERVICE CO., LTD. 蘇州優樂賽共享服務股份有限 收入 公司 (2649) Refund 退款 500 @14",
+      "credit": 7070.6,
+      "sourceLines": [442, 451]
+    },
+    {
+      "tradeDate": "05/03/26",
+      "settleDate": "05/03/26",
+      "refNo": "72081683",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 ALSCO POOLING SERVICE CO., LTD. 蘇州優樂賽共享服務股份有限 支付 公司 (2649) REPAY 還款 90% LOAN 孖展",
+      "debit": 6363.54,
+      "sourceLines": [473, 482]
+    },
+    {
+      "tradeDate": "05/03/26",
+      "settleDate": "05/03/26",
+      "refNo": "72184476",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 SHENZHEN ZHAOWEI MACHINERY & ELECT CO LTD 深圳市兆威 收入 機電股份有限公司 (2692) Refund 退款 10,000 @73.68",
+      "credit": 744230.63,
+      "sourceLines": [505, 514]
+    },
+    {
+      "tradeDate": "05/03/26",
+      "settleDate": "05/03/26",
+      "refNo": "72184477",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 SHENZHEN ZHAOWEI MACHINERY & ELECT CO LTD 深圳市兆威 支付 機電股份有限公司 (2692) REPAY 還款 90% LOAN 孖展",
+      "debit": 669807.57,
+      "sourceLines": [536, 545]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 15813.49,
+      "marketPrice": 1,
+      "marketValue": 15813.49,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 3.4,
+      "marketPrice": 1,
+      "marketValue": 3.4,
+      "currency": "USD"
+    },
+    {
+      "symbol": "000100",
+      "name": "MINIMAX-WP",
+      "assetType": "Stock",
+      "quantity": 20,
+      "marketPrice": 800,
+      "marketValue": 16000,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "002259",
+      "name": "ZIJIN GOLD INTL 紫金黃金國際",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 211.6,
+      "marketValue": 21160,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "003750",
+      "name": "CATL 寧德時代",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 499.8,
+      "marketValue": 49980,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006082",
+      "name": "BIREN TECH 壁仞科技",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 32.4,
+      "marketValue": 6480,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 4,
+    "parseTimeMs": 3259,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

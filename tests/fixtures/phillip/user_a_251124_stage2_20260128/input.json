@@ -1,0 +1,93 @@
+{
+  "accountInfo": {
+    "accountCode": "M000001",
+    "clientName": "USER A",
+    "statementDate": "24/11/25"
+  },
+  "transactions": [
+    {
+      "tradeDate": "24/11/25",
+      "settleDate": "24/11/25",
+      "refNo": "59320659",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購QUANTGROUP HOLDING LIMITED 量化派控股有限公司 (2685) Apply 支付 Deposit 10% 申請按金 1,000 @9.8",
+      "debit": 989.88,
+      "sourceLines": [409, 418]
+    },
+    {
+      "tradeDate": "24/11/25",
+      "settleDate": "24/11/25",
+      "refNo": "59320660",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購QUANTGROUP HOLDING LIMITED 量化派控股有限公司 (2685) 支付 APPLY 申請孖展 1,000 @9.8",
+      "debit": 8908.94,
+      "sourceLines": [440, 449]
+    },
+    {
+      "tradeDate": "24/11/25",
+      "settleDate": "24/11/25",
+      "refNo": "59320661",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購QUANTGROUP HOLDING LIMITED 量化派控股有限公司 (2685) 90% 收入 LOAN 孖展 0% 1 DAYS 日",
+      "credit": 8908.94,
+      "sourceLines": [472, 481]
+    },
+    {
+      "tradeDate": "24/11/25",
+      "settleDate": "24/11/25",
+      "refNo": "59459331",
+      "transType": "Receipt",
+      "particulars": "贖回 輝立港元貨幣市場基金 REDEEM 86.65 PHILLIP HKD MMF @11.4219",
+      "credit": 989.71,
+      "sourceLines": [503]
+    },
+    {
+      "tradeDate": "24/11/25",
+      "settleDate": "24/11/25",
+      "product": "UT",
+      "refNo": "59474009",
+      "transType": "Withdraw",
+      "particulars": "提貨 輝立港元貨幣市場基金 W/D 86.65 基金 提貨",
+      "sourceLines": [535, 544]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 499.91,
+      "marketPrice": 1,
+      "marketValue": 499.91,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 0.8,
+      "marketPrice": 1,
+      "marketValue": 0.8,
+      "currency": "USD"
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 1002.89,
+      "marketPrice": 11.4219,
+      "marketValue": 11454.91,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 4,
+    "parseTimeMs": 2924,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

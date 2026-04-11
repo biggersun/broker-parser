@@ -1,0 +1,156 @@
+{
+  "accountInfo": {
+    "accountCode": "M000002",
+    "clientName": "USER B",
+    "statementDate": "29/01/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "29/01/26",
+      "settleDate": "29/01/26",
+      "refNo": "68638701",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購EASTROC BEVERAGE (GROUP) CO., LTD. 東鵬飲料(集團)股份有限 支付 公司 (9980) Apply Deposit 10% 申請按金 7,000 @248",
+      "debit": 175350.75,
+      "sourceLines": [433, 442]
+    },
+    {
+      "tradeDate": "29/01/26",
+      "settleDate": "29/01/26",
+      "refNo": "68638702",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購EASTROC BEVERAGE (GROUP) CO., LTD. 東鵬飲料(集團)股份有限 支付 公司 (9980) APPLY 申請孖展 7,000 @248",
+      "debit": 1578156.8,
+      "sourceLines": [465, 474]
+    },
+    {
+      "tradeDate": "29/01/26",
+      "settleDate": "29/01/26",
+      "refNo": "68638703",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購EASTROC BEVERAGE (GROUP) CO., LTD. 東鵬飲料(集團)股份有限 收入 公司 (9980) 90% LOAN 孖展 0% 1 DAYS 日",
+      "credit": 1578156.8,
+      "sourceLines": [496, 505]
+    },
+    {
+      "tradeDate": "29/01/26",
+      "settleDate": "29/01/26",
+      "refNo": "68638704",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購EASTROC BEVERAGE (GROUP) CO., LTD. 東鵬飲料(集團)股份有限 支付 公司 (9980) HANDLING FEE 手續費",
+      "debit": 88,
+      "sourceLines": [528, 537]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -65562.02,
+      "marketPrice": 1,
+      "marketValue": -65562.02,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1,
+      "marketValue": -0.3,
+      "currency": "USD"
+    },
+    {
+      "symbol": "000100",
+      "name": "MINIMAX-WP",
+      "assetType": "Stock",
+      "quantity": 20,
+      "marketPrice": 500,
+      "marketValue": 10000,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "000200",
+      "name": "MELCO INT'L DEV 新濠國際發展",
+      "assetType": "Stock",
+      "quantity": 2,
+      "marketPrice": 4.29,
+      "marketValue": 8.58,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "002259",
+      "name": "ZIJIN GOLD INTL 紫金黃金國際",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 244.8,
+      "marketValue": 24480,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006082",
+      "name": "BIREN TECH 壁仞科技",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 35.2,
+      "marketValue": 7040,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006978",
+      "name": "IMMUNOTECH-B 永泰生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 5,
+      "marketPrice": 2.51,
+      "marketValue": 12.55,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009606",
+      "name": "DUALITYBIO-B 映恩生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 337.2,
+      "marketValue": 67440,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "PDD",
+      "name": "PDD HOLDINGS INC 拼多多",
+      "assetType": "Stock",
+      "quantity": 15,
+      "marketPrice": 102.81,
+      "marketValue": 1542.15,
+      "currency": "USD",
+      "extras": {
+        "product": "Equity",
+        "market": "XNGS"
+      }
+    }
+  ]
+}

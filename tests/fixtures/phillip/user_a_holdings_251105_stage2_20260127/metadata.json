@@ -1,0 +1,12 @@
+{
+  "name": "holdings_sxx_251105_stage2_20260127",
+  "description": "Stage2 规则格式化测试: holdings_sxx_251105_20260127",
+  "stage1Source": "holdings_sxx_251105_20260127",
+  "createdAt": "2026-01-28",
+  "formatterType": "rule",
+  "inputTransactions": 6,
+  "inputHoldings": 3,
+  "outputTransactions": 2,
+  "outputIpo": 1,
+  "outputSnapshots": 3
+}

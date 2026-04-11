@@ -1,0 +1,44 @@
+{
+  "accountInfo": {
+    "accountCode": "M000004",
+    "clientName": "USER G",
+    "statementDate": "13/02/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "13/02/26",
+      "settleDate": "13/02/26",
+      "refNo": "71367112",
+      "transType": "Payment",
+      "particulars": "兌換 CONVERT HKD TO USD @ 7.8258 AR34033",
+      "debit": 9100,
+      "sourceLines": [442]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 44006.06,
+      "marketPrice": 1,
+      "marketValue": 44006.06,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 23.81,
+      "marketPrice": 1,
+      "marketValue": 23.81,
+      "currency": "USD"
+    }
+  ],
+  "metadata": {
+    "totalPages": 4,
+    "parseTimeMs": 3308,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

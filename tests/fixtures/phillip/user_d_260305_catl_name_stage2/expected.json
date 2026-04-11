@@ -1,0 +1,64 @@
+{
+  "accountCode": "M000003",
+  "clientName": "USER D",
+  "period": "2026-03-05",
+  "statementDate": "2026-03-05",
+  "transactions": [],
+  "ipo": [],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 15813.49,
+      "marketPrice": 1,
+      "marketValue": 15813.49,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": 3.4,
+      "marketPrice": 1,
+      "marketValue": 3.4,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "000100",
+      "assetCategory": "Stock",
+      "quantity": 20,
+      "marketPrice": 800,
+      "marketValue": 16000,
+      "currency": "HKD",
+      "description": "MINIMAX-WP"
+    },
+    {
+      "symbol": "002259",
+      "assetCategory": "Stock",
+      "quantity": 100,
+      "marketPrice": 211.6,
+      "marketValue": 21160,
+      "currency": "HKD",
+      "description": "ZIJIN GOLD INTL 紫金黃金國際"
+    },
+    {
+      "symbol": "003750",
+      "assetCategory": "Stock",
+      "quantity": 100,
+      "marketPrice": 499.8,
+      "marketValue": 49980,
+      "currency": "HKD",
+      "description": "CATL 寧德時代"
+    },
+    {
+      "symbol": "006082",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 32.4,
+      "marketValue": 6480,
+      "currency": "HKD",
+      "description": "BIREN TECH 壁仞科技"
+    }
+  ]
+}

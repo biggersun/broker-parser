@@ -1,0 +1,94 @@
+{
+  "accountCode": "M000005",
+  "clientName": "USER F",
+  "period": "2026-01-06",
+  "statementDate": "2026-01-06",
+  "transactions": [
+    {
+      "transactionDate": "2026-01-06",
+      "settlementDate": "2026-01-06",
+      "refNo": "65885986",
+      "stockCode": "000100",
+      "stockName": "MINIMAX GROUP INC.",
+      "transactionType": "IPO_FEE",
+      "amount": -88,
+      "fee": 88,
+      "currency": "HKD",
+      "description": "IPO 新股認購MINIMAX GROUP INC. (100) HANDLING FEE 手續費"
+    },
+    {
+      "transactionDate": "2026-01-06",
+      "settlementDate": "2026-01-06",
+      "refNo": "66177749",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "SELL",
+      "quantity": 107.54,
+      "price": 11.4547,
+      "amount": 1231.84,
+      "currency": "HKD",
+      "description": "贖回 輝立港元貨幣市場基金 REDEEM 107.54 PHILLIP HKD MMF @11.4547"
+    }
+  ],
+  "ipo": [
+    {
+      "transactionDate": "2026-01-06",
+      "settlementDate": "2026-01-06",
+      "stockCode": "000100",
+      "stockName": "MINIMAX GROUP INC.",
+      "quantity": 1000,
+      "price": 165,
+      "amount": 165000,
+      "currency": "HKD",
+      "description": "IPO 新股認購MINIMAX GROUP INC. (100) Apply Deposit 10% 申請按金 1,000 支付 @165",
+      "type": "apply"
+    }
+  ],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 26867.63,
+      "marketPrice": 1,
+      "marketValue": 26867.63,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": 66.21,
+      "marketPrice": 1,
+      "marketValue": 66.21,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "002259",
+      "assetCategory": "Stock",
+      "quantity": 100,
+      "marketPrice": 149.5,
+      "marketValue": 14950,
+      "currency": "HKD",
+      "description": "ZIJIN GOLD INTL 紫金黃金國際"
+    },
+    {
+      "symbol": "006082",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 31,
+      "marketValue": 6200,
+      "currency": "HKD",
+      "description": "BIREN TECH 壁仞科技"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 0,
+      "marketPrice": 11.4547,
+      "marketValue": 0,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

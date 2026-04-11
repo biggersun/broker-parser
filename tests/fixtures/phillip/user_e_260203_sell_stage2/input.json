@@ -1,0 +1,165 @@
+{
+  "accountInfo": {
+    "accountCode": "M000004",
+    "clientName": "USER E",
+    "statementDate": "03/02/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69227071",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購DISTINCT HEALTHCARE HOLDINGS LIMITED 卓正医疗控股有限公司 支付 (2677) Apply Deposit 10% 申請按金 100 @66.6",
+      "debit": 672.72,
+      "sourceLines": [425, 434]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69227072",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購DISTINCT HEALTHCARE HOLDINGS LIMITED 卓正医疗控股有限公司 支付 (2677) APPLY 申請孖展 100 @66.6",
+      "debit": 6054.45,
+      "sourceLines": [457, 466]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69227073",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購DISTINCT HEALTHCARE HOLDINGS LIMITED 卓正医疗控股有限公司 收入 (2677) 90% LOAN 孖展 0% 1 DAYS 日",
+      "credit": 6054.45,
+      "sourceLines": [488, 497]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69299228",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購SHENZHEN HANS CNC TECHNOLOGY CO., LTD. 深圳市大族數控 支付 科技股份有限公司 (3200) Apply Deposit 10% 申請按金 1,500 @95.8",
+      "debit": 14514.92,
+      "sourceLines": [520, 529]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69299229",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購SHENZHEN HANS CNC TECHNOLOGY CO., LTD. 深圳市大族數控 支付 科技股份有限公司 (3200) APPLY 申請孖展 1,500 @95.8",
+      "debit": 130634.3,
+      "sourceLines": [551, 560]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69299230",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購SHENZHEN HANS CNC TECHNOLOGY CO., LTD. 深圳市大族數控 收入 科技股份有限公司 (3200) 90% LOAN 孖展 0% 1 DAYS 日",
+      "credit": 130634.3,
+      "sourceLines": [583, 592]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69299231",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購SHENZHEN HANS CNC TECHNOLOGY CO., LTD. 深圳市大族數控 支付 科技股份有限公司 (3200) HANDLING FEE 手續費",
+      "debit": 88,
+      "sourceLines": [614, 623]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "product": "UT",
+      "refNo": "69498020",
+      "transType": "Withdraw",
+      "particulars": "提貨 輝立港元貨幣市場基金 W/D 355.07 基金 提貨",
+      "sourceLines": [646, 655]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69532472",
+      "transType": "Receipt",
+      "particulars": "贖回 輝立港元貨幣市場基金 REDEEM 355.07 PHILLIP HKD MMF @11.4786",
+      "credit": 4075.71,
+      "sourceLines": [677]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "03/02/26",
+      "refNo": "69538972",
+      "transType": "Receipt",
+      "particulars": "INT ADJ",
+      "credit": 0.66,
+      "sourceLines": [709]
+    },
+    {
+      "tradeDate": "03/02/26",
+      "settleDate": "05/02/26",
+      "product": "Equity",
+      "refNo": "28770617",
+      "transType": "Sell",
+      "particulars": "EASTROC 100 249.4000 24,940.00 股票 賣出 東鵬飲料/XHKG/009980 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 25.00 0.71 3.00 1.41",
+      "credit": 24834.88,
+      "sourceLines": [242, 252, 265, 277, 289]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 7711.36,
+      "marketPrice": 1,
+      "marketValue": 7711.36,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "002768",
+      "name": "QINGDAO GON TECHNOLOGY CO.,",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 36,
+      "marketValue": 7200,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009980",
+      "name": "EASTROC 東鵬飲料",
+      "assetType": "Stock",
+      "quantity": 0,
+      "marketPrice": 251.8,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 0,
+      "marketPrice": 11.4786,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 5,
+    "parseTimeMs": 3412,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

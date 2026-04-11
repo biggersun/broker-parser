@@ -1,0 +1,119 @@
+{
+  "accountInfo": {
+    "accountCode": "M000002",
+    "clientName": "USER B",
+    "statementDate": "22/07/25"
+  },
+  "transactions": [
+    {
+      "tradeDate": "22/07/25",
+      "settleDate": "22/07/25",
+      "refNo": "47026055",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購NANJING LEADS BIOLABS CO LTD-B 南京維立志博生物科技股份有限 支付  公司 (9887) Apply Deposit 10% 申請按金 20,000 @35",
+      "debit": 70705.95,
+      "sourceLines": [433, 442]
+    },
+    {
+      "tradeDate": "22/07/25",
+      "settleDate": "22/07/25",
+      "refNo": "47026056",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購NANJING LEADS BIOLABS CO LTD-B 南京維立志博生物科技股份有限 支付  公司 (9887) APPLY 申請孖展 20,000 @35",
+      "debit": 636353.55,
+      "sourceLines": [465, 474]
+    },
+    {
+      "tradeDate": "22/07/25",
+      "settleDate": "22/07/25",
+      "refNo": "47026057",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購NANJING LEADS BIOLABS CO LTD-B 南京維立志博生物科技股份有限 收入  公司 (9887) 90% LOAN 孖展 0% 1 DAYS 日",
+      "credit": 636353.55,
+      "sourceLines": [496, 505]
+    },
+    {
+      "tradeDate": "22/07/25",
+      "settleDate": "22/07/25",
+      "refNo": "47026058",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購NANJING LEADS BIOLABS CO LTD-B 南京維立志博生物科技股份有限 支付  公司 (9887) HANDLING FEE 手續費",
+      "debit": 88,
+      "sourceLines": [528, 537]
+    },
+    {
+      "tradeDate": "22/07/25",
+      "settleDate": "22/07/25",
+      "product": "UT",
+      "refNo": "47076788",
+      "transType": "Withdraw",
+      "particulars": "提貨 輝立港元貨幣市場基金 W/D 1854.73 基金 提貨",
+      "sourceLines": [559, 568]
+    },
+    {
+      "tradeDate": "22/07/25",
+      "settleDate": "22/07/25",
+      "refNo": "47112788",
+      "transType": "Receipt",
+      "particulars": "贖回 輝立港元貨幣市場基金 REDEEM 1854.73 PHILLIP HKD MMF @11.3534",
+      "credit": 21057.49,
+      "sourceLines": [591]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -41280.8,
+      "marketPrice": 1,
+      "marketValue": -41280.8,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "000200",
+      "name": "MELCO INT'L DEV 新濠國際發展",
+      "assetType": "Stock",
+      "quantity": 2,
+      "marketPrice": 5.13,
+      "marketValue": 10.26,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009606",
+      "name": "DUALITYBIO-B 映恩生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 329.2,
+      "marketValue": 65840,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 0,
+      "marketPrice": 11.3534,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 4,
+    "parseTimeMs": 4071,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

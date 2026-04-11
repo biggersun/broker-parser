@@ -1,0 +1,12 @@
+{
+  "name": "sxx_251124_stage2_20260128",
+  "description": "Stage2 规则格式化测试: sxx_251124_20260128",
+  "stage1Source": "sxx_251124_20260128",
+  "createdAt": "2026-01-28",
+  "formatterType": "rule",
+  "inputTransactions": 5,
+  "inputHoldings": 3,
+  "outputTransactions": 1,
+  "outputIpo": 1,
+  "outputSnapshots": 3
+}

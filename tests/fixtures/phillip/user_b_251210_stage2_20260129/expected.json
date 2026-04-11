@@ -1,0 +1,114 @@
+{
+  "accountCode": "M000002",
+  "clientName": "USER B",
+  "period": "2025-12-10",
+  "statementDate": "2025-12-10",
+  "transactions": [
+    {
+      "transactionDate": "2025-12-10",
+      "settlementDate": "2025-12-12",
+      "refNo": "27589689",
+      "stockCode": "002659",
+      "stockName": "BAO PHARMA-B 寶濟藥業－Ｂ",
+      "transactionType": "SELL",
+      "quantity": 100,
+      "price": 52.6,
+      "amount": 5175.55,
+      "currency": "HKD",
+      "description": "BAO PHARMA-B 100 52.6000 5,260.00 股票 賣出 寶濟藥業－Ｂ/XHKG/002659 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 6.00 0.15 3.00 0.30"
+    }
+  ],
+  "ipo": [],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 5715.84,
+      "marketPrice": 1,
+      "marketValue": 5715.84,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1,
+      "marketValue": -0.3,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "000200",
+      "assetCategory": "Stock",
+      "quantity": 2,
+      "marketPrice": 4.74,
+      "marketValue": 9.48,
+      "currency": "HKD",
+      "description": "MELCO INT'L DEV 新濠國際發展"
+    },
+    {
+      "symbol": "002259",
+      "assetCategory": "Stock",
+      "quantity": 100,
+      "marketPrice": 142.9,
+      "marketValue": 14290,
+      "currency": "HKD",
+      "description": "ZIJIN GOLD INTL 紫金黃金國際"
+    },
+    {
+      "symbol": "002659",
+      "assetCategory": "Stock",
+      "quantity": 0,
+      "marketPrice": 63,
+      "marketValue": 0,
+      "currency": "HKD",
+      "description": "BAO PHARMA-B 寶濟藥業－Ｂ"
+    },
+    {
+      "symbol": "003690",
+      "assetCategory": "Stock",
+      "quantity": 100,
+      "marketPrice": 100,
+      "marketValue": 10000,
+      "currency": "HKD",
+      "description": "MEITUAN-W 美團－Ｗ"
+    },
+    {
+      "symbol": "006978",
+      "assetCategory": "Stock",
+      "quantity": 5,
+      "marketPrice": 2.86,
+      "marketValue": 14.3,
+      "currency": "HKD",
+      "description": "IMMUNOTECH-B 永泰生物－Ｂ"
+    },
+    {
+      "symbol": "009606",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 312,
+      "marketValue": 62400,
+      "currency": "HKD",
+      "description": "DUALITYBIO-B 映恩生物－Ｂ"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 8948.33,
+      "marketPrice": 11.4369,
+      "marketValue": 102341.16,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    },
+    {
+      "symbol": "PDD",
+      "assetCategory": "Stock",
+      "quantity": 15,
+      "marketPrice": 117.14,
+      "marketValue": 1757.1,
+      "currency": "USD",
+      "description": "PDD HOLDINGS INC 拼多多"
+    }
+  ]
+}

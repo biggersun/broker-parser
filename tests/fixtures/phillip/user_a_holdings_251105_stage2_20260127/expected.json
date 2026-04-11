@@ -1,0 +1,76 @@
+{
+  "accountCode": "M000001",
+  "clientName": "USER A",
+  "period": "2025-11-05",
+  "statementDate": "2025-11-05",
+  "transactions": [
+    {
+      "transactionDate": "2025-11-05",
+      "settlementDate": "2025-11-05",
+      "refNo": "58362051",
+      "stockCode": "002698",
+      "stockName": "SOFTCARE LIMITED 樂舒適有限公司",
+      "transactionType": "IPO_FEE",
+      "amount": -68,
+      "fee": 68,
+      "currency": "HKD",
+      "description": "IPO 新股認購SOFTCARE LIMITED 樂舒適有限公司 (2698) HANDLING FEE 手續費"
+    },
+    {
+      "transactionDate": "2025-11-05",
+      "settlementDate": "2025-11-05",
+      "refNo": "58511098",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "SELL",
+      "quantity": 641.5,
+      "price": 11.4114,
+      "amount": 7320.41,
+      "currency": "HKD",
+      "description": "贖回 輝立港元貨幣市場基金 REDEEM 641.5 PHILLIP HKD MMF @11.4114"
+    }
+  ],
+  "ipo": [
+    {
+      "transactionDate": "2025-11-05",
+      "settlementDate": "2025-11-05",
+      "stockCode": "002698",
+      "stockName": "SOFTCARE LIMITED 樂舒適有限公司",
+      "quantity": 3000,
+      "price": 26.2,
+      "amount": 78600,
+      "currency": "HKD",
+      "description": "IPO 新股認購SOFTCARE LIMITED 樂舒適有限公司 (2698) Apply Deposit 10% 申請 支付 按金 3,000 @26.2",
+      "type": "apply"
+    }
+  ],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 499.94,
+      "marketPrice": 1,
+      "marketValue": 499.94,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": 0.8,
+      "marketPrice": 1,
+      "marketValue": 0.8,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 393.9,
+      "marketPrice": 11.4114,
+      "marketValue": 4494.95,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

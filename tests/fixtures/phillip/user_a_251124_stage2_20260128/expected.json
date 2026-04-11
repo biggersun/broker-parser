@@ -1,0 +1,64 @@
+{
+  "accountCode": "M000001",
+  "clientName": "USER A",
+  "period": "2025-11-24",
+  "statementDate": "2025-11-24",
+  "transactions": [
+    {
+      "transactionDate": "2025-11-24",
+      "settlementDate": "2025-11-24",
+      "refNo": "59459331",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "SELL",
+      "quantity": 86.65,
+      "price": 11.4219,
+      "amount": 989.71,
+      "currency": "HKD",
+      "description": "贖回 輝立港元貨幣市場基金 REDEEM 86.65 PHILLIP HKD MMF @11.4219"
+    }
+  ],
+  "ipo": [
+    {
+      "transactionDate": "2025-11-24",
+      "settlementDate": "2025-11-24",
+      "stockCode": "002685",
+      "stockName": "QUANTGROUP HOLDING LIMITED 量化派控股有限公司",
+      "quantity": 1000,
+      "price": 9.8,
+      "amount": 9800,
+      "currency": "HKD",
+      "description": "IPO 新股認購QUANTGROUP HOLDING LIMITED 量化派控股有限公司 (2685) Apply 支付 Deposit 10% 申請按金 1,000 @9.8",
+      "type": "apply"
+    }
+  ],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 499.91,
+      "marketPrice": 1,
+      "marketValue": 499.91,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": 0.8,
+      "marketPrice": 1,
+      "marketValue": 0.8,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 1002.89,
+      "marketPrice": 11.4219,
+      "marketValue": 11454.91,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

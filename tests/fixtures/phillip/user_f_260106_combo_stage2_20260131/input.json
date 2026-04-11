@@ -1,0 +1,182 @@
+{
+  "accountInfo": {
+    "accountCode": "M000005",
+    "clientName": "USER F",
+    "statementDate": "06/01/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "65885983",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購MINIMAX GROUP INC. (100) Apply Deposit 10% 申請按金 1,000 支付 @165",
+      "debit": 16666.4,
+      "sourceLines": [409, 418]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "65885984",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購MINIMAX GROUP INC. (100) APPLY 申請孖展 1,000 @165",
+      "debit": 149997.63,
+      "sourceLines": [440]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "65885985",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購MINIMAX GROUP INC. (100) 90% LOAN 孖展 0% 1 DAYS 日",
+      "credit": 149997.63,
+      "sourceLines": [472]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "65885986",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購MINIMAX GROUP INC. (100) HANDLING FEE 手續費",
+      "debit": 88,
+      "sourceLines": [503]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "66177749",
+      "transType": "Receipt",
+      "particulars": "贖回 輝立港元貨幣市場基金 REDEEM 107.54 PHILLIP HKD MMF @11.4547",
+      "credit": 1231.84,
+      "sourceLines": [535]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "product": "UT",
+      "refNo": "66201805",
+      "transType": "Withdraw",
+      "particulars": "提貨 輝立港元貨幣市場基金 W/D 107.54 基金 提貨",
+      "sourceLines": [566, 575]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "66291088",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 KNOWLEDGE ATLAS TECHNOLOGY JOINT STOCK CO LTD 北京 收入 智譜華章科技股份有限公司 (2513) Refund 退款 400 @116.2",
+      "credit": 46948.75,
+      "sourceLines": [598, 607]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "66291089",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 KNOWLEDGE ATLAS TECHNOLOGY JOINT STOCK CO LTD 北京 支付 智譜華章科技股份有限公司 (2513) REPAY 還款 90% LOAN 孖展",
+      "debit": 42253.88,
+      "sourceLines": [629, 638]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "66395354",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 SHENZHEN EDGE MEDICAL CO., LTD. 深圳市精鋒醫療科技股份有 收入 限公司 (2675) Refund 退款 3,500 @43.24",
+      "credit": 152866.27,
+      "sourceLines": [661, 670]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "66395355",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 SHENZHEN EDGE MEDICAL CO., LTD. 深圳市精鋒醫療科技股份有 支付 限公司 (2675) REPAY 還款 90% LOAN 孖展",
+      "debit": 137579.64,
+      "sourceLines": [692, 701]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "66480103",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 SHANGHAI ILUVATAR COREX SEMICONDUCTOR CO LTD 上海天 收入 數智芯半導體股份有限公司 (9903) Refund 退款 1,500 @144.6",
+      "credit": 219087.44,
+      "sourceLines": [724, 733]
+    },
+    {
+      "tradeDate": "06/01/26",
+      "settleDate": "06/01/26",
+      "refNo": "66480104",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 SHANGHAI ILUVATAR COREX SEMICONDUCTOR CO LTD 上海天 支付 數智芯半導體股份有限公司 (9903) REPAY 還款 90% LOAN 孖展",
+      "debit": 197178.7,
+      "sourceLines": [242, 251]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 26867.63,
+      "marketPrice": 1,
+      "marketValue": 26867.63,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 66.21,
+      "marketPrice": 1,
+      "marketValue": 66.21,
+      "currency": "USD"
+    },
+    {
+      "symbol": "002259",
+      "name": "ZIJIN GOLD INTL 紫金黃金國際",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 149.5,
+      "marketValue": 14950,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006082",
+      "name": "BIREN TECH 壁仞科技",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 31,
+      "marketValue": 6200,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 0,
+      "marketPrice": 11.4547,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 5,
+    "parseTimeMs": 4446,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

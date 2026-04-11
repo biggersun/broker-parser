@@ -1,0 +1,192 @@
+{
+  "accountInfo": {
+    "accountCode": "M000002",
+    "clientName": "USER B",
+    "statementDate": "07/01/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "07/01/26",
+      "settleDate": "07/01/26",
+      "product": "UT",
+      "refNo": "66566500",
+      "transType": "Deposit",
+      "particulars": "輝立港元貨幣市場基金 DEP 4037.16 基金 存貨",
+      "sourceLines": [409, 418]
+    },
+    {
+      "tradeDate": "07/01/26",
+      "settleDate": "07/01/26",
+      "refNo": "66590398",
+      "transType": "Payment",
+      "particulars": "購買 輝立港元貨幣市場基金 SUB 4037.16 PHILLIP HKD MMF @11.4554",
+      "debit": 46247.28,
+      "sourceLines": [440]
+    },
+    {
+      "tradeDate": "07/01/26",
+      "settleDate": "07/01/26",
+      "refNo": "66632190",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 MINIMAX GROUP INC. (100) Refund 退款 4,000 @165",
+      "credit": 666656.1,
+      "sourceLines": [472]
+    },
+    {
+      "tradeDate": "07/01/26",
+      "settleDate": "07/01/26",
+      "refNo": "66632191",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 MINIMAX GROUP INC. (100) REPAY 還款 90% LOAN 孖展",
+      "debit": 599990.49,
+      "sourceLines": [503]
+    },
+    {
+      "tradeDate": "07/01/26",
+      "settleDate": "07/01/26",
+      "refNo": "66632192",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 MINIMAX GROUP INC. (100) ALLOTED AMOUNT 獲配金額 20 支付 @165",
+      "debit": 3333.28,
+      "sourceLines": [535, 544]
+    },
+    {
+      "tradeDate": "07/01/26",
+      "settleDate": "07/01/26",
+      "refNo": "66796286",
+      "transType": "Deposit",
+      "particulars": "IPO 新股認購 MINIMAX GROUP INC. (100) ALLOTED SHARES 獲配股數 20 股票 存貨",
+      "sourceLines": [566, 575]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 63832.41,
+      "marketPrice": 1,
+      "marketValue": 63832.41,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1,
+      "marketValue": -0.3,
+      "currency": "USD"
+    },
+    {
+      "symbol": "000100",
+      "name": "MINIMAX GROUP INC.",
+      "assetType": "Stock",
+      "quantity": 20,
+      "marketPrice": 165,
+      "marketValue": 3300,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "000200",
+      "name": "MELCO INT'L DEV 新濠國際發展",
+      "assetType": "Stock",
+      "quantity": 2,
+      "marketPrice": 4.23,
+      "marketValue": 8.46,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "002259",
+      "name": "ZIJIN GOLD INTL 紫金黃金國際",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 147.2,
+      "marketValue": 14720,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006082",
+      "name": "BIREN TECH 壁仞科技",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 33.12,
+      "marketValue": 6624,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006978",
+      "name": "IMMUNOTECH-B 永泰生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 5,
+      "marketPrice": 2.78,
+      "marketValue": 13.9,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009606",
+      "name": "DUALITYBIO-B 映恩生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 348.6,
+      "marketValue": 69720,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 4037.16,
+      "marketPrice": 11.4554,
+      "marketValue": 46247.28,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    },
+    {
+      "symbol": "PDD",
+      "name": "PDD HOLDINGS INC 拼多多",
+      "assetType": "Stock",
+      "quantity": 15,
+      "marketPrice": 122.66,
+      "marketValue": 1839.9,
+      "currency": "USD",
+      "extras": {
+        "product": "Equity",
+        "market": "XNGS"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 5,
+    "parseTimeMs": 3320,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

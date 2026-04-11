@@ -1,0 +1,11 @@
+{
+  "description": "M000005 2026-01-21 日结单，修复 ZIJIN GOLD INTL 误匹配 INTEREST 规则导致 transactionType=FEE 的问题",
+  "createdAt": "2026-02-01T00:00:00.000Z",
+  "source": "./data/raw/sxxlovelife@126_M000005/daily/2026/01/M000005_20260121.pdf",
+  "bugfix": {
+    "issue": "CATEGORY_RULES 中 INTEREST 模式 ['利息', 'INTEREST', 'INT'] 的 'INT' 误匹配了 'INTL' (International)",
+    "fix": "移除 'INT' 模式，只保留 ['利息', 'INTEREST']",
+    "file": "src/services/domain/parsing/phillip-rule-formatter.ts",
+    "line": "53-56"
+  }
+}

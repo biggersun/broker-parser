@@ -1,0 +1,12 @@
+{
+  "name": "fjl_250722_withdraw_stage2_20260131",
+  "description": "Stage2 规则格式化测试: fjl_250722_withdraw",
+  "stage1Source": "fjl_250722_withdraw_20260131",
+  "createdAt": "2026-01-31",
+  "formatterType": "rule",
+  "inputTransactions": 6,
+  "inputHoldings": 4,
+  "outputTransactions": 2,
+  "outputIpo": 1,
+  "outputSnapshots": 4
+}

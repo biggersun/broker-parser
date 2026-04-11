@@ -1,0 +1,12 @@
+{
+  "name": "fjl_251128_stage2_20260128",
+  "description": "Stage2 规则格式化测试: fjl_251128_20260128",
+  "stage1Source": "fjl_251128_20260128",
+  "createdAt": "2026-01-28",
+  "formatterType": "rule",
+  "inputTransactions": 11,
+  "inputHoldings": 11,
+  "outputTransactions": 4,
+  "outputIpo": 2,
+  "outputSnapshots": 11
+}

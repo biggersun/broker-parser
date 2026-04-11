@@ -1,0 +1,117 @@
+{
+  "accountCode": "M000002",
+  "clientName": "USER B",
+  "period": "2026-01-29",
+  "statementDate": "2026-01-29",
+  "transactions": [
+    {
+      "transactionDate": "2026-01-29",
+      "settlementDate": "2026-01-29",
+      "refNo": "68638704",
+      "stockCode": "009980",
+      "stockName": "EASTROC BEVERAGE (GROUP) CO., LTD. 東鵬飲料(集團)股份有限 公司",
+      "transactionType": "IPO_FEE",
+      "amount": -88,
+      "fee": 88,
+      "currency": "HKD",
+      "description": "IPO 新股認購EASTROC BEVERAGE (GROUP) CO., LTD. 東鵬飲料(集團)股份有限 支付 公司 (9980) HANDLING FEE 手續費"
+    }
+  ],
+  "ipo": [
+    {
+      "transactionDate": "2026-01-29",
+      "settlementDate": "2026-01-29",
+      "stockCode": "009980",
+      "stockName": "EASTROC BEVERAGE (GROUP) CO., LTD. 東鵬飲料(集團)股份有限 公司",
+      "quantity": 7000,
+      "price": 248,
+      "amount": 1736000,
+      "currency": "HKD",
+      "description": "IPO 新股認購EASTROC BEVERAGE (GROUP) CO., LTD. 東鵬飲料(集團)股份有限 支付 公司 (9980) Apply Deposit 10% 申請按金 7,000 @248",
+      "type": "apply"
+    }
+  ],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": -65562.02,
+      "marketPrice": 1,
+      "marketValue": -65562.02,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "USD",
+      "assetCategory": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1,
+      "marketValue": -0.3,
+      "currency": "USD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "000100",
+      "assetCategory": "Stock",
+      "quantity": 20,
+      "marketPrice": 500,
+      "marketValue": 10000,
+      "currency": "HKD",
+      "description": "MINIMAX-WP"
+    },
+    {
+      "symbol": "000200",
+      "assetCategory": "Stock",
+      "quantity": 2,
+      "marketPrice": 4.29,
+      "marketValue": 8.58,
+      "currency": "HKD",
+      "description": "MELCO INT'L DEV 新濠國際發展"
+    },
+    {
+      "symbol": "002259",
+      "assetCategory": "Stock",
+      "quantity": 100,
+      "marketPrice": 244.8,
+      "marketValue": 24480,
+      "currency": "HKD",
+      "description": "ZIJIN GOLD INTL 紫金黃金國際"
+    },
+    {
+      "symbol": "006082",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 35.2,
+      "marketValue": 7040,
+      "currency": "HKD",
+      "description": "BIREN TECH 壁仞科技"
+    },
+    {
+      "symbol": "006978",
+      "assetCategory": "Stock",
+      "quantity": 5,
+      "marketPrice": 2.51,
+      "marketValue": 12.55,
+      "currency": "HKD",
+      "description": "IMMUNOTECH-B 永泰生物－Ｂ"
+    },
+    {
+      "symbol": "009606",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 337.2,
+      "marketValue": 67440,
+      "currency": "HKD",
+      "description": "DUALITYBIO-B 映恩生物－Ｂ"
+    },
+    {
+      "symbol": "PDD",
+      "assetCategory": "Stock",
+      "quantity": 15,
+      "marketPrice": 102.81,
+      "marketValue": 1542.15,
+      "currency": "USD",
+      "description": "PDD HOLDINGS INC 拼多多"
+    }
+  ]
+}

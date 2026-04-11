@@ -1,0 +1,121 @@
+{
+  "accountCode": "M000004",
+  "clientName": "USER E",
+  "period": "2026-02-03",
+  "statementDate": "2026-02-03",
+  "transactions": [
+    {
+      "transactionDate": "2026-02-03",
+      "settlementDate": "2026-02-03",
+      "refNo": "69299231",
+      "stockCode": "003200",
+      "stockName": "SHENZHEN HANS CNC TECHNOLOGY CO., LTD. 深圳市大族數控 科技股份有限公司",
+      "transactionType": "IPO_FEE",
+      "amount": -88,
+      "fee": 88,
+      "currency": "HKD",
+      "description": "IPO 新股認購SHENZHEN HANS CNC TECHNOLOGY CO., LTD. 深圳市大族數控 支付 科技股份有限公司 (3200) HANDLING FEE 手續費"
+    },
+    {
+      "transactionDate": "2026-02-03",
+      "settlementDate": "2026-02-03",
+      "refNo": "69532472",
+      "stockCode": "PHILLIP_HKD_MMF",
+      "stockName": "輝立港元貨幣市場基金",
+      "transactionType": "SELL",
+      "quantity": 355.07,
+      "price": 11.4786,
+      "amount": 4075.71,
+      "currency": "HKD",
+      "description": "贖回 輝立港元貨幣市場基金 REDEEM 355.07 PHILLIP HKD MMF @11.4786"
+    },
+    {
+      "transactionDate": "2026-02-03",
+      "settlementDate": "2026-02-03",
+      "refNo": "69538972",
+      "stockCode": "N/A",
+      "stockName": "",
+      "transactionType": "FEE",
+      "amount": 0.66,
+      "currency": "HKD",
+      "description": "INT ADJ"
+    },
+    {
+      "transactionDate": "2026-02-03",
+      "settlementDate": "2026-02-05",
+      "refNo": "28770617",
+      "stockCode": "009980",
+      "stockName": "EASTROC 東鵬飲料",
+      "transactionType": "SELL",
+      "quantity": 100,
+      "price": 249.4,
+      "amount": 24834.88,
+      "currency": "HKD",
+      "description": "EASTROC 100 249.4000 24,940.00 股票 賣出 東鵬飲料/XHKG/009980 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 25.00 0.71 3.00 1.41"
+    }
+  ],
+  "ipo": [
+    {
+      "transactionDate": "2026-02-03",
+      "settlementDate": "2026-02-03",
+      "stockCode": "002677",
+      "stockName": "DISTINCT HEALTHCARE HOLDINGS LIMITED 卓正医疗控股有限公司",
+      "quantity": 100,
+      "price": 66.6,
+      "amount": 6659.999999999999,
+      "currency": "HKD",
+      "description": "IPO 新股認購DISTINCT HEALTHCARE HOLDINGS LIMITED 卓正医疗控股有限公司 支付 (2677) Apply Deposit 10% 申請按金 100 @66.6",
+      "type": "apply"
+    },
+    {
+      "transactionDate": "2026-02-03",
+      "settlementDate": "2026-02-03",
+      "stockCode": "003200",
+      "stockName": "SHENZHEN HANS CNC TECHNOLOGY CO., LTD. 深圳市大族數控 科技股份有限公司",
+      "quantity": 1500,
+      "price": 95.8,
+      "amount": 143700,
+      "currency": "HKD",
+      "description": "IPO 新股認購SHENZHEN HANS CNC TECHNOLOGY CO., LTD. 深圳市大族數控 支付 科技股份有限公司 (3200) Apply Deposit 10% 申請按金 1,500 @95.8",
+      "type": "apply"
+    }
+  ],
+  "snapshots": [
+    {
+      "symbol": "HKD",
+      "assetCategory": "Cash",
+      "quantity": 7711.36,
+      "marketPrice": 1,
+      "marketValue": 7711.36,
+      "currency": "HKD",
+      "description": "Cash Balance"
+    },
+    {
+      "symbol": "002768",
+      "assetCategory": "Stock",
+      "quantity": 200,
+      "marketPrice": 36,
+      "marketValue": 7200,
+      "currency": "HKD",
+      "description": "QINGDAO GON TECHNOLOGY CO.,"
+    },
+    {
+      "symbol": "009980",
+      "assetCategory": "Stock",
+      "quantity": 0,
+      "marketPrice": 251.8,
+      "marketValue": 0,
+      "currency": "HKD",
+      "description": "EASTROC 東鵬飲料"
+    },
+    {
+      "symbol": "UT.480010",
+      "assetCategory": "Fund",
+      "quantity": 0,
+      "marketPrice": 11.4786,
+      "marketValue": 0,
+      "currency": "HKD",
+      "description": "Phillip HKD Money Market Fund 輝立港元貨幣市場基金"
+    }
+  ]
+}

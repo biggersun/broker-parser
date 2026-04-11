@@ -1,0 +1,70 @@
+{
+  "accountInfo": {
+    "accountCode": "M000006",
+    "clientName": "USER C",
+    "statementDate": "20/01/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "20/01/26",
+      "settleDate": "20/01/26",
+      "refNo": "68055211",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 SHANGHAI LONGCHEER TECHNOLOGY CO., LTD. 上海龍旗科技股 收入 份有限公司 (9611) Refund 退款 300 @31",
+      "credit": 9393.79,
+      "sourceLines": [433, 442]
+    },
+    {
+      "tradeDate": "20/01/26",
+      "settleDate": "20/01/26",
+      "refNo": "68055212",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 SHANGHAI LONGCHEER TECHNOLOGY CO., LTD. 上海龍旗科技股 支付 份有限公司 (9611) REPAY 還款 90% LOAN 孖展",
+      "debit": 8454.41,
+      "sourceLines": [465, 474]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 1439.36,
+      "marketPrice": 1,
+      "marketValue": 1439.36,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "006082",
+      "name": "BIREN TECH 壁仞科技",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 36.9,
+      "marketValue": 7380,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 1667.54,
+      "marketPrice": 11.4647,
+      "marketValue": 19117.85,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 4,
+    "parseTimeMs": 3705,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

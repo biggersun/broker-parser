@@ -1,0 +1,252 @@
+{
+  "accountInfo": {
+    "accountCode": "M000002",
+    "clientName": "USER B",
+    "statementDate": "28/11/25"
+  },
+  "transactions": [
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "refNo": "60128355",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購ANHUI JINYAN KAOLIN NEW MATERIALS CO., LTD. 安徽金岩高嶺土 支付 新材料股份有限公司 (2693) Apply Deposit 10% 申請按金 1,000 @7.3",
+      "debit": 737.36,
+      "sourceLines": [409, 418]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "refNo": "60128356",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購ANHUI JINYAN KAOLIN NEW MATERIALS CO., LTD. 安徽金岩高嶺土 支付 新材料股份有限公司 (2693) APPLY 申請孖展 1,000 @7.3",
+      "debit": 6636.26,
+      "sourceLines": [440, 449]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "refNo": "60128357",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購ANHUI JINYAN KAOLIN NEW MATERIALS CO., LTD. 安徽金岩高嶺土 收入 新材料股份有限公司 (2693) 90% LOAN 孖展 0% 3 DAYS 日",
+      "credit": 6636.26,
+      "sourceLines": [472, 481]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "refNo": "60249107",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購LEMO SERVICES CO., LTD 樂摩科技服務股份有限公司 (2539) Apply 支付 Deposit 10% 申請按金 40,000 @40",
+      "debit": 161613.6,
+      "sourceLines": [503, 512]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "refNo": "60249108",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購LEMO SERVICES CO., LTD 樂摩科技服務股份有限公司 (2539) APPLY 支付 申請孖展 40,000 @40",
+      "debit": 1454522.4,
+      "sourceLines": [535, 544]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "refNo": "60249109",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購LEMO SERVICES CO., LTD 樂摩科技服務股份有限公司 (2539) 90% 收入 LOAN 孖展 0% 3 DAYS 日",
+      "credit": 1454522.4,
+      "sourceLines": [566, 575]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "refNo": "60249110",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購LEMO SERVICES CO., LTD 樂摩科技服務股份有限公司 (2539) 支付 HANDLING FEE 手續費",
+      "debit": 88,
+      "sourceLines": [598, 607]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "refNo": "60299395",
+      "transType": "Receipt",
+      "particulars": "贖回 輝立港元貨幣市場基金 REDEEM 8566.87 PHILLIP HKD MMF @11.4239",
+      "credit": 97867.07,
+      "sourceLines": [629]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "28/11/25",
+      "product": "UT",
+      "refNo": "60332582",
+      "transType": "Withdraw",
+      "particulars": "提貨 輝立港元貨幣市場基金 W/D 8566.87 基金 提貨",
+      "sourceLines": [661, 670]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "02/12/25",
+      "product": "Equity",
+      "refNo": "27420564",
+      "transType": "Sell",
+      "particulars": "CIG 50 83.0000 4,150.00 股票 賣出 劍橋科技/XHKG/006166 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 5.00 0.12 3.00 0.23",
+      "credit": 4066.65,
+      "sourceLines": [692, 703, 716, 728, 740]
+    },
+    {
+      "tradeDate": "28/11/25",
+      "settleDate": "02/12/25",
+      "product": "Equity",
+      "refNo": "27420565",
+      "transType": "Sell",
+      "particulars": "HAIWEI ELEC 200 17.0000 3,400.00 股票 賣出 海偉股份/XHKG/009609 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 4.00 0.10 3.00 0.19",
+      "credit": 3317.71,
+      "sourceLines": [242, 252, 265, 277, 289]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -56646.94,
+      "marketPrice": 1,
+      "marketValue": -56646.94,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": -0.3,
+      "marketPrice": 1,
+      "marketValue": -0.3,
+      "currency": "USD"
+    },
+    {
+      "symbol": "000200",
+      "name": "MELCO INT'L DEV 新濠國際發展",
+      "assetType": "Stock",
+      "quantity": 2,
+      "marketPrice": 5,
+      "marketValue": 10,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "002259",
+      "name": "ZIJIN GOLD INTL 紫金黃金國際",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 139.2,
+      "marketValue": 13920,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "003690",
+      "name": "MEITUAN-W 美團－Ｗ",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 102.5,
+      "marketValue": 10250,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "CIG",
+      "assetType": "Stock",
+      "quantity": 0,
+      "marketPrice": 83,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006978",
+      "name": "IMMUNOTECH-B 永泰生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 5,
+      "marketPrice": 3.03,
+      "marketValue": 15.15,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009606",
+      "name": "DUALITYBIO-B 映恩生物－Ｂ",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 345.4,
+      "marketValue": 69080,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "009609",
+      "name": "HAIWEI ELEC 海偉股份",
+      "assetType": "Stock",
+      "quantity": 0,
+      "marketPrice": 11,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 0,
+      "marketPrice": 11.4239,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    },
+    {
+      "symbol": "PDD",
+      "name": "PDD HOLDINGS INC 拼多多",
+      "assetType": "Stock",
+      "quantity": 15,
+      "marketPrice": 115.8,
+      "marketValue": 1737,
+      "currency": "USD",
+      "extras": {
+        "product": "Equity",
+        "market": "XNGS"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 5,
+    "parseTimeMs": 4883,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "accountInfo": {
+    "accountCode": "M000005",
+    "clientName": "USER F",
+    "statementDate": "09/01/26"
+  },
+  "transactions": [
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "08/01/26",
+      "refNo": "67363457",
+      "transType": "Payment",
+      "particulars": "Reverse 贖回 輝立港元貨幣市場基金 REDEEM 2301.76 PHILLIP HKD MMF 支付 @11.4559",
+      "debit": 26368.73,
+      "sourceLines": [409, 418]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "09/01/26",
+      "refNo": "67371228",
+      "transType": "Payment",
+      "particulars": "購買 輝立港元貨幣市場基金 SUB 1346.36 PHILLIP HKD MMF @11.4567",
+      "debit": 15424.84,
+      "sourceLines": [440]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "09/01/26",
+      "refNo": "67443908",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 HONGXING COLDCHAIN (HUNAN) CO., LTD. 紅星冷鏈（湖南）股份 收入 有限公司 (1641) Refund 退款 500 @12.26",
+      "credit": 6191.83,
+      "sourceLines": [472, 481]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "09/01/26",
+      "refNo": "67443909",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 HONGXING COLDCHAIN (HUNAN) CO., LTD. 紅星冷鏈（湖南）股份 支付 有限公司 (1641) REPAY 還款 90% LOAN 孖展",
+      "debit": 5572.65,
+      "sourceLines": [503, 512]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "09/01/26",
+      "refNo": "67532347",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 BBSB INTERNATIONAL LIMITED (8610) Refund 退款 12,000 @0.7",
+      "credit": 8484.71,
+      "sourceLines": [535]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "09/01/26",
+      "refNo": "67532348",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 BBSB INTERNATIONAL LIMITED (8610) REPAY 還款 90% LOAN 孖 支付 展",
+      "debit": 7636.24,
+      "sourceLines": [566, 575]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "09/01/26",
+      "refNo": "67624129",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購 GIGADEVICE SEMICONDUCTOR INC. 兆易創新科技集團股份有限公 收入 司 (3986) Refund 退款 3,000 @162",
+      "credit": 490901.31,
+      "sourceLines": [598, 607]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "09/01/26",
+      "refNo": "67624130",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購 GIGADEVICE SEMICONDUCTOR INC. 兆易創新科技集團股份有限公 支付 司 (3986) REPAY 還款 90% LOAN 孖展",
+      "debit": 441811.18,
+      "sourceLines": [629, 638]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "09/01/26",
+      "product": "UT",
+      "refNo": "67649583",
+      "transType": "Deposit",
+      "particulars": "輝立港元貨幣市場基金 DEP 1346.36 基金 存貨",
+      "sourceLines": [661, 670]
+    },
+    {
+      "tradeDate": "09/01/26",
+      "settleDate": "13/01/26",
+      "refNo": "28180639",
+      "transType": "Sell",
+      "particulars": "MINIMAX-WP 20 288.0000 5,760.00 股票 賣出 /XHKG/000100 印花稅 交易徵費 結算費 交易費 Stamp Levy CCASS Fee Trading Fee 6.00 0.17 3.00 0.33",
+      "credit": 5675.5,
+      "sourceLines": [692, 703, 716, 728, 740]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 30364.56,
+      "marketPrice": 1,
+      "marketValue": 30364.56,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 66.21,
+      "marketPrice": 1,
+      "marketValue": 66.21,
+      "currency": "USD"
+    },
+    {
+      "symbol": "000100",
+      "name": "MINIMAX-WP",
+      "assetType": "Stock",
+      "quantity": 0,
+      "marketPrice": 345,
+      "marketValue": 0,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "002259",
+      "name": "ZIJIN GOLD INTL 紫金黃金國際",
+      "assetType": "Stock",
+      "quantity": 100,
+      "marketPrice": 150.7,
+      "marketValue": 15070,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "006082",
+      "name": "BIREN TECH 壁仞科技",
+      "assetType": "Stock",
+      "quantity": 200,
+      "marketPrice": 34.06,
+      "marketValue": 6812,
+      "currency": "HKD",
+      "extras": {
+        "product": "Equity",
+        "market": "XHKG"
+      }
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 1346.36,
+      "marketPrice": 11.4567,
+      "marketValue": 15424.84,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 5,
+    "parseTimeMs": 5941,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}

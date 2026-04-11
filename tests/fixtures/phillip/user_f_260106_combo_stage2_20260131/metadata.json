@@ -1,0 +1,12 @@
+{
+  "name": "m758_260106_combo_stage2_20260131",
+  "description": "Stage2 规则格式化测试: m758_260106_combo",
+  "stage1Source": "m758_260106_combo_20260131",
+  "createdAt": "2026-01-31",
+  "formatterType": "rule",
+  "inputTransactions": 12,
+  "inputHoldings": 5,
+  "outputTransactions": 2,
+  "outputIpo": 1,
+  "outputSnapshots": 5
+}

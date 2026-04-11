@@ -1,0 +1,12 @@
+{
+  "name": "m549_260203_sell_stage2",
+  "description": "Stage2 规则格式化测试: m549_260203_sell（含东鹏饮料卖出，跨页交易）",
+  "stage1Source": "m549_260203_sell",
+  "createdAt": "2026-02-12",
+  "formatterType": "rule",
+  "inputTransactions": 11,
+  "inputHoldings": 4,
+  "outputTransactions": 4,
+  "outputIpo": 2,
+  "outputSnapshots": 4
+}

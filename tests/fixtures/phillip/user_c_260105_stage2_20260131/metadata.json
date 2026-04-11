@@ -1,0 +1,12 @@
+{
+  "name": "lcf_260105_stage2_20260131",
+  "description": "Stage2 规则格式化测试: lcf_260105",
+  "stage1Source": "lcf_260105_20260131",
+  "createdAt": "2026-01-31",
+  "formatterType": "rule",
+  "inputTransactions": 14,
+  "inputHoldings": 3,
+  "outputTransactions": 4,
+  "outputIpo": 3,
+  "outputSnapshots": 3
+}

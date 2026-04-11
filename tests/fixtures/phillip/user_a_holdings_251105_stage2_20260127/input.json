@@ -1,0 +1,102 @@
+{
+  "accountInfo": {
+    "accountCode": "M000001",
+    "clientName": "USER A",
+    "statementDate": "05/11/25"
+  },
+  "transactions": [
+    {
+      "tradeDate": "05/11/25",
+      "settleDate": "05/11/25",
+      "refNo": "58362048",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購SOFTCARE LIMITED 樂舒適有限公司 (2698) Apply Deposit 10% 申請 支付 按金 3,000 @26.2",
+      "debit": 7939.27,
+      "sourceLines": [400, 409]
+    },
+    {
+      "tradeDate": "05/11/25",
+      "settleDate": "05/11/25",
+      "refNo": "58362049",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購SOFTCARE LIMITED 樂舒適有限公司 (2698) APPLY 申請孖展 3,000 支付 @26.2",
+      "debit": 71453.41,
+      "sourceLines": [432, 441]
+    },
+    {
+      "tradeDate": "05/11/25",
+      "settleDate": "05/11/25",
+      "refNo": "58362050",
+      "transType": "Receipt",
+      "particulars": "IPO 新股認購SOFTCARE LIMITED 樂舒適有限公司 (2698) 90% LOAN 孖展 0% 1 收入 DAYS 日",
+      "credit": 71453.41,
+      "sourceLines": [463, 472]
+    },
+    {
+      "tradeDate": "05/11/25",
+      "settleDate": "05/11/25",
+      "refNo": "58362051",
+      "transType": "Payment",
+      "particulars": "IPO 新股認購SOFTCARE LIMITED 樂舒適有限公司 (2698) HANDLING FEE 手續費",
+      "debit": 68,
+      "sourceLines": [495]
+    },
+    {
+      "tradeDate": "05/11/25",
+      "settleDate": "05/11/25",
+      "refNo": "58511098",
+      "transType": "Receipt",
+      "particulars": "贖回 輝立港元貨幣市場基金 REDEEM 641.5 PHILLIP HKD MMF @11.4114",
+      "credit": 7320.41,
+      "sourceLines": [526]
+    },
+    {
+      "tradeDate": "05/11/25",
+      "settleDate": "05/11/25",
+      "product": "UT",
+      "refNo": "58531194",
+      "transType": "Withdraw",
+      "particulars": "提貨 輝立港元貨幣市場基金 W/D 641.5 基金 提貨",
+      "sourceLines": [558, 567]
+    }
+  ],
+  "holdings": [
+    {
+      "symbol": "HKD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 499.94,
+      "marketPrice": 1,
+      "marketValue": 499.94,
+      "currency": "HKD"
+    },
+    {
+      "symbol": "USD",
+      "name": "Cash Balance",
+      "assetType": "Cash",
+      "quantity": 0.8,
+      "marketPrice": 1,
+      "marketValue": 0.8,
+      "currency": "USD"
+    },
+    {
+      "symbol": "UT.480010",
+      "name": "Phillip HKD Money",
+      "assetType": "Fund",
+      "quantity": 393.9,
+      "marketPrice": 11.4114,
+      "marketValue": 4494.95,
+      "currency": "HKD",
+      "extras": {
+        "product": "UT",
+        "market": "OTCU"
+      }
+    }
+  ],
+  "metadata": {
+    "totalPages": 4,
+    "parseTimeMs": 3112,
+    "extractor": "pdfplumber",
+    "warnings": []
+  }
+}
