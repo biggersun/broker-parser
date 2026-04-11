@@ -1,48 +1,133 @@
 # promptfoo Skill 触发率评估用例
-# 正例：应触发 parse-statement skill
-# 负例：不应触发
+# 正例（22 个）：应触发 parse-statement skill
+# 负例（12 个）：不应触发
 
 version: 1
 testCases:
-  # 正例（positive）
-  - description: 直接要求解析 PDF
+  # ── 正例（positive）──────────────────────────────────────────────
+
+  # 直接要求解析（中英文）
+  - description: 中文直接要求解析 PDF 结单
     input: '帮我解析这个 PDF 结单'
     expected: triggered
-  - description: 英文要求
+  - description: 英文要求解析券商结单
     input: 'Parse this brokerage statement for me'
     expected: triggered
-  - description: 提取交易记录
-    input: '从这个 PDF 里提取所有交易记录'
+  - description: 英文解析 PDF 月结单
+    input: 'Can you parse my monthly PDF statement?'
     expected: triggered
-  - description: 转为 JSON
-    input: '把这个 PDF 转成 JSON 格式'
-    expected: triggered
-  - description: 辉立证券关键词
-    input: '我有一份辉立证券的月结单'
-    expected: triggered
-  - description: Phillip Securities
-    input: 'I have a Phillip Securities statement PDF'
-    expected: triggered
-  - description: 查看持仓
-    input: '帮我看看这份结单里的持仓情况'
-    expected: triggered
+
+  # 各种"结单"同义词
   - description: 月结单
     input: '这是我上个月的月结单，帮我分析一下'
+    expected: triggered
+  - description: 交易结单
+    input: '我有一份交易结单需要解析'
     expected: triggered
   - description: 对账单
     input: '我的对账单来了，帮我解析'
     expected: triggered
-  - description: 结单解析关键词
+  - description: 持仓报告（PDF）
+    input: '帮我读取这份 PDF 持仓报告'
+    expected: triggered
+
+  # 不同券商关键词
+  - description: 辉立关键词
+    input: '我有一份辉立的月结单'
+    expected: triggered
+  - description: Phillip 关键词
+    input: 'I have a Phillip Securities statement PDF'
+    expected: triggered
+  - description: 辉立证券全称
+    input: '帮我解析辉立证券的这份结单 PDF'
+    expected: triggered
+
+  # 不同动词
+  - description: 动词"读取"
+    input: '帮我读取这个 PDF 里的交易数据'
+    expected: triggered
+  - description: 动词"提取"
+    input: '从这个 PDF 里提取所有交易记录'
+    expected: triggered
+  - description: 动词"转换"
+    input: '把这个 PDF 转成 JSON 格式'
+    expected: triggered
+  - description: 动词"分析"
+    input: '分析一下这份结单 PDF'
+    expected: triggered
+  - description: 关键词"结单解析"
     input: '能帮我做结单解析吗'
     expected: triggered
 
-  # 负例（negative）
-  - description: 一般财务问题（无 PDF）
+  # 用户描述场景
+  - description: 收到结单的场景
+    input: '我收到了券商发来的结单，帮我看看里面的交易'
+    expected: triggered
+  - description: 用户提供 PDF 路径
+    input: '帮我看看这个 PDF /tmp/statement_202401.pdf'
+    expected: triggered
+  - description: 帮我看看这个 PDF
+    input: '帮我看看这个 PDF 文件里有什么交易'
+    expected: triggered
+
+  # 组合场景
+  - description: 查看交易记录
+    input: '帮我从结单里查看我的交易记录'
+    expected: triggered
+  - description: 查看持仓情况
+    input: '帮我看看这份结单里的持仓情况'
+    expected: triggered
+  - description: 查看资产汇总
+    input: '解析一下这份 PDF，我想看资产汇总'
+    expected: triggered
+  - description: 批量解析
+    input: '我有几份 PDF 结单，能一起解析吗'
+    expected: triggered
+
+  # ── 负例（negative）──────────────────────────────────────────────
+
+  # 一般股市问题（无结单/PDF 语境）
+  - description: 一般股市行情问题
     input: '帮我分析一下股市行情'
     expected: not_triggered
-  - description: 其他文档类型
+  - description: 股票推荐
+    input: '你觉得腾讯的股票值得买吗'
+    expected: not_triggered
+  - description: 港股交易时间
+    input: '港股的交易时间是什么时候'
+    expected: not_triggered
+
+  # 其他文档格式
+  - description: Excel 表格
     input: '帮我解析这个 Excel 表格'
     expected: not_triggered
-  - description: 一般提问
+  - description: Word 文档
+    input: '帮我读取这份 Word 文档'
+    expected: not_triggered
+  - description: CSV 文件
+    input: '帮我导入这个 CSV 交易数据'
+    expected: not_triggered
+
+  # 一般财务问题（不涉及解析）
+  - description: 税务计算问题
+    input: '我今年的股票收益要交多少税'
+    expected: not_triggered
+  - description: 开户咨询
+    input: '怎么在辉立证券开户'
+    expected: not_triggered
+
+  # PDF 但不是结单
+  - description: 合同 PDF
+    input: '帮我看看这份 PDF 合同'
+    expected: not_triggered
+  - description: 招股说明书
+    input: '帮我读取这份 PDF 招股说明书'
+    expected: not_triggered
+
+  # IPO 相关但不涉及解析
+  - description: IPO 概念问题
     input: '什么是 IPO？'
+    expected: not_triggered
+  - description: 申购操作问题
+    input: '怎么在手机上申购新股'
     expected: not_triggered
