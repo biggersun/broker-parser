@@ -8,8 +8,8 @@
 
 ## Supported Brokers
 
-| Broker | Status |
-| --- | --- |
+| Broker                        | Status    |
+| ----------------------------- | --------- |
 | Phillip Securities (辉立证券) | Supported |
 
 ## Quick Start
@@ -54,17 +54,17 @@ After installing, tell Claude: "Help me parse this PDF statement"
 
 ## CLI Reference
 
-| Command | Description |
-| --- | --- |
-| `tcos-parse <pdf>` | Parse PDF, output JSON to stdout |
-| `tcos-parse <pdf> -o out.json` | Output to file |
-| `tcos-parse <pdf> --raw` | Output Stage1 raw data only |
-| `tcos-parse <pdf> --no-clean` | Skip Stage3 cleaning step |
-| `tcos-parse <pdf> -b phillip` | Specify broker (skip auto-detect) |
-| `tcos-parse --detect <pdf>` | Detect which broker a PDF belongs to |
-| `tcos-parse --list-parsers` | List available broker parsers |
-| `tcos-parse <pdf> -v` | Show stage timing to stderr |
-| `tcos-parse <pdf> -q` | Quiet mode, output JSON only |
+| Command                        | Description                          |
+| ------------------------------ | ------------------------------------ |
+| `tcos-parse <pdf>`             | Parse PDF, output JSON to stdout     |
+| `tcos-parse <pdf> -o out.json` | Output to file                       |
+| `tcos-parse <pdf> --raw`       | Output Stage1 raw data only          |
+| `tcos-parse <pdf> --no-clean`  | Skip Stage3 cleaning step            |
+| `tcos-parse <pdf> -b phillip`  | Specify broker (skip auto-detect)    |
+| `tcos-parse --detect <pdf>`    | Detect which broker a PDF belongs to |
+| `tcos-parse --list-parsers`    | List available broker parsers        |
+| `tcos-parse <pdf> -v`          | Show stage timing to stderr          |
+| `tcos-parse <pdf> -q`          | Quiet mode, output JSON only         |
 
 ## Pipeline Architecture
 
@@ -98,7 +98,7 @@ PDF File
       "transactionType": "BUY",
       "quantity": 1000,
       "price": 12.34,
-      "amount": -12340.00,
+      "amount": -12340.0,
       "currency": "HKD"
     }
   ],
@@ -107,7 +107,7 @@ PDF File
     {
       "symbol": "HKD",
       "assetCategory": "Cash",
-      "quantity": 50000.00,
+      "quantity": 50000.0,
       "currency": "HKD"
     }
   ]

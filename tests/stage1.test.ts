@@ -16,8 +16,7 @@ const LOCAL_FIXTURES = path.join(__dirname, 'fixtures/local/phillip');
 
 // 检查是否有本地 PDF 文件
 const hasPdf =
-  fs.existsSync(LOCAL_FIXTURES) &&
-  fs.readdirSync(LOCAL_FIXTURES).some((f) => f.endsWith('.pdf'));
+  fs.existsSync(LOCAL_FIXTURES) && fs.readdirSync(LOCAL_FIXTURES).some((f) => f.endsWith('.pdf'));
 
 // 根据是否有 PDF 动态选择 describe 或 describe.skip
 const describeFn = hasPdf ? describe : describe.skip;
@@ -53,9 +52,7 @@ if (!hasPdf) {
   describe('Stage1 Extractor (skipped)', () => {
     it('no local PDFs found — place .pdf files in tests/fixtures/local/phillip/ to enable', () => {
       // eslint-disable-next-line no-console
-      console.log(
-        'Stage1 tests skipped: no PDF files in tests/fixtures/local/phillip/'
-      );
+      console.log('Stage1 tests skipped: no PDF files in tests/fixtures/local/phillip/');
     });
   });
 }

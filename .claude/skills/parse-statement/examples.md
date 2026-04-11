@@ -5,6 +5,7 @@
 **用户说**：帮我解析这份辉立的结单
 
 **操作过程**：
+
 1. 运行 setup 安装环境（首次使用）
 2. 执行解析命令
 
@@ -26,9 +27,9 @@ tcos-parse /path/to/statement_202401.pdf
       "name": "TENCENT",
       "type": "BUY",
       "quantity": 100,
-      "price": 298.40,
-      "amount": 29840.00,
-      "fee": 50.00,
+      "price": 298.4,
+      "amount": 29840.0,
+      "fee": 50.0,
       "currency": "HKD"
     },
     {
@@ -37,9 +38,9 @@ tcos-parse /path/to/statement_202401.pdf
       "name": "BABA-SW",
       "type": "SELL",
       "quantity": 200,
-      "price": 72.50,
-      "amount": 14500.00,
-      "fee": 30.00,
+      "price": 72.5,
+      "amount": 14500.0,
+      "fee": 30.0,
       "currency": "HKD"
     }
   ],
@@ -48,15 +49,15 @@ tcos-parse /path/to/statement_202401.pdf
       "ticker": "00700",
       "name": "TENCENT",
       "quantity": 100,
-      "avgCost": 298.40,
-      "marketValue": 30000.00,
+      "avgCost": 298.4,
+      "marketValue": 30000.0,
       "currency": "HKD"
     }
   ],
   "assets": {
-    "totalAssets": 150000.00,
-    "cashBalance": 120000.00,
-    "marketValue": 30000.00,
+    "totalAssets": 150000.0,
+    "cashBalance": 120000.0,
+    "marketValue": 30000.0,
     "currency": "HKD"
   }
 }
@@ -100,8 +101,10 @@ tcos-parse /path/to/statement_202401.pdf --raw
     {
       "pageNumber": 1,
       "tables": [
-        [["Date", "Stock Code", "Description", "Buy/Sell", "Qty", "Price", "Amount"],
-         ["10/01/2024", "00700", "TENCENT", "B", "100", "298.40", "29,840.00"]]
+        [
+          ["Date", "Stock Code", "Description", "Buy/Sell", "Qty", "Price", "Amount"],
+          ["10/01/2024", "00700", "TENCENT", "B", "100", "298.40", "29,840.00"]
+        ]
       ]
     }
   ]
@@ -210,9 +213,9 @@ tcos-parse /path/to/statement_202401.pdf -q | jq '.transactions[] | select(.type
   "name": "TENCENT",
   "type": "BUY",
   "quantity": 100,
-  "price": 298.40,
-  "amount": 29840.00,
-  "fee": 50.00,
+  "price": 298.4,
+  "amount": 29840.0,
+  "fee": 50.0,
   "currency": "HKD"
 }
 ```

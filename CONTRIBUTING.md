@@ -33,13 +33,13 @@ npm test
 
 Before adding new fixtures to `tests/fixtures/phillip/`, you **must** sanitize all personal data:
 
-| Original Value | Replace With |
-| --- | --- |
-| Real names | USER A / USER B / USER C / ... |
-| Account M596241 | M000001 |
-| Account M503022 | M000002 |
-| Other real accounts | M000003, M000004, ... |
-| HKID / passport numbers | Remove entirely |
+| Original Value          | Replace With                   |
+| ----------------------- | ------------------------------ |
+| Real names              | USER A / USER B / USER C / ... |
+| Account M596241         | M000001                        |
+| Account M503022         | M000002                        |
+| Other real accounts     | M000003, M000004, ...          |
+| HKID / passport numbers | Remove entirely                |
 
 **Never commit files containing real names or account numbers.**
 

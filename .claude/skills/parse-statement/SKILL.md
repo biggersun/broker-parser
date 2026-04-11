@@ -81,16 +81,16 @@ tcos-parse <pdf> -q                 # 静默模式，只输出 JSON（无额外�
 
 ### 选项说明
 
-| 选项               | 说明                                      |
-| ------------------ | ----------------------------------------- |
-| `-o, --output`     | 输出到文件而非 stdout                     |
-| `-b, --broker`     | 指定券商名称，跳过自动检测                |
-| `--raw`            | 只输出 Stage1 原始表格数据，不做格式化    |
-| `--no-clean`       | 跳过 Stage3 数据清理步骤                  |
-| `--detect`         | 检测 PDF 所属券商及置信度                 |
-| `--list-parsers`   | 列出所有可用的券商解析器                  |
-| `-v, --verbose`    | 显示各阶段耗时详情（输出到 stderr）       |
-| `-q, --quiet`      | 静默模式，仅输出纯 JSON                  |
+| 选项             | 说明                                   |
+| ---------------- | -------------------------------------- |
+| `-o, --output`   | 输出到文件而非 stdout                  |
+| `-b, --broker`   | 指定券商名称，跳过自动检测             |
+| `--raw`          | 只输出 Stage1 原始表格数据，不做格式化 |
+| `--no-clean`     | 跳过 Stage3 数据清理步骤               |
+| `--detect`       | 检测 PDF 所属券商及置信度              |
+| `--list-parsers` | 列出所有可用的券商解析器               |
+| `-v, --verbose`  | 显示各阶段耗时详情（输出到 stderr）    |
+| `-q, --quiet`    | 静默模式，仅输出纯 JSON                |
 
 ## 输出格式
 
@@ -108,9 +108,9 @@ tcos-parse <pdf> -q                 # 静默模式，只输出 JSON（无额外�
       "name": "TENCENT",
       "type": "BUY",
       "quantity": 100,
-      "price": 298.40,
-      "amount": 29840.00,
-      "fee": 50.00,
+      "price": 298.4,
+      "amount": 29840.0,
+      "fee": 50.0,
       "currency": "HKD"
     }
   ],
@@ -119,15 +119,15 @@ tcos-parse <pdf> -q                 # 静默模式，只输出 JSON（无额外�
       "ticker": "00700",
       "name": "TENCENT",
       "quantity": 100,
-      "avgCost": 298.40,
-      "marketValue": 30000.00,
+      "avgCost": 298.4,
+      "marketValue": 30000.0,
       "currency": "HKD"
     }
   ],
   "assets": {
-    "totalAssets": 150000.00,
-    "cashBalance": 120000.00,
-    "marketValue": 30000.00,
+    "totalAssets": 150000.0,
+    "cashBalance": 120000.0,
+    "marketValue": 30000.0,
     "currency": "HKD"
   }
 }

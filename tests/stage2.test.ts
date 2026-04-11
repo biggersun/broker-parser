@@ -447,57 +447,53 @@ describe('Stage2 Rule Formatter Regression Tests', () => {
   });
 
   fixtures.forEach(({ name, dir }) => {
-    test(
-      `Case: ${name}`,
-      async () => {
-        const input = JSON.parse(
-          fs.readFileSync(path.join(dir, 'input.json'), 'utf-8')
-        ) as RawTableData;
-        const expected = JSON.parse(
-          fs.readFileSync(path.join(dir, 'expected.json'), 'utf-8')
-        ) as StatementData;
+    test(`Case: ${name}`, async () => {
+      const input = JSON.parse(
+        fs.readFileSync(path.join(dir, 'input.json'), 'utf-8')
+      ) as RawTableData;
+      const expected = JSON.parse(
+        fs.readFileSync(path.join(dir, 'expected.json'), 'utf-8')
+      ) as StatementData;
 
-        // Stage2 格式化
-        const formatter = new PhillipRuleFormatter();
-        const formatted = await formatter.format(input);
+      // Stage2 格式化
+      const formatter = new PhillipRuleFormatter();
+      const formatted = await formatter.format(input);
 
-        // Stage3 清理
-        const { result: actual } = cleanStatementData(formatted);
+      // Stage3 清理
+      const { result: actual } = cleanStatementData(formatted);
 
-        // 比较
-        const comparison = compareStage2Output(actual, expected);
+      // 比较
+      const comparison = compareStage2Output(actual, expected);
 
-        // 汇总问题
-        const allIssues = [
-          ...comparison.requiredFieldErrors,
-          ...comparison.countMismatches,
-          ...comparison.criticalMismatches,
-          ...comparison.extraItems,
-          ...comparison.missingItems,
-        ];
+      // 汇总问题
+      const allIssues = [
+        ...comparison.requiredFieldErrors,
+        ...comparison.countMismatches,
+        ...comparison.criticalMismatches,
+        ...comparison.extraItems,
+        ...comparison.missingItems,
+      ];
 
-        if (allIssues.length > 0) {
+      if (allIssues.length > 0) {
+        // eslint-disable-next-line no-console
+        console.log(`[${name}] Found ${allIssues.length} issues:`);
+        allIssues.slice(0, 10).forEach((issue) => {
           // eslint-disable-next-line no-console
-          console.log(`[${name}] Found ${allIssues.length} issues:`);
-          allIssues.slice(0, 10).forEach((issue) => {
-            // eslint-disable-next-line no-console
-            console.log(`  - ${issue}`);
-          });
-          if (allIssues.length > 10) {
-            // eslint-disable-next-line no-console
-            console.log(`  ... and ${allIssues.length - 10} more`);
-          }
+          console.log(`  - ${issue}`);
+        });
+        if (allIssues.length > 10) {
+          // eslint-disable-next-line no-console
+          console.log(`  ... and ${allIssues.length - 10} more`);
         }
+      }
 
-        // 断言
-        expect(comparison.requiredFieldErrors).toEqual([]);
-        expect(comparison.criticalMismatches).toEqual([]);
-        expect(comparison.countMismatches).toEqual([]);
-        expect(comparison.extraItems).toEqual([]);
-        expect(comparison.missingItems).toEqual([]);
-      },
-      30000
-    );
+      // 断言
+      expect(comparison.requiredFieldErrors).toEqual([]);
+      expect(comparison.criticalMismatches).toEqual([]);
+      expect(comparison.countMismatches).toEqual([]);
+      expect(comparison.extraItems).toEqual([]);
+      expect(comparison.missingItems).toEqual([]);
+    }, 30000);
   });
 
   test('关键字段提取率 >= 90%', async () => {
@@ -539,9 +535,7 @@ describe('Stage2 Rule Formatter Regression Tests', () => {
 
     const rate = totalFields > 0 ? matchedFields / totalFields : 0;
     // eslint-disable-next-line no-console
-    console.log(
-      `Extraction rate: ${matchedFields}/${totalFields} = ${(rate * 100).toFixed(1)}%`
-    );
+    console.log(`Extraction rate: ${matchedFields}/${totalFields} = ${(rate * 100).toFixed(1)}%`);
     expect(rate).toBeGreaterThanOrEqual(0.9);
   });
 });
