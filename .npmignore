@@ -13,8 +13,7 @@ tsconfig.test.json
 # CI
 .github/
 
-# Skill
-.claude/
+# Skill 随包发布（选项 A），不排除 .claude/
 
 # 源码（只发布 dist/）
 src/**/*.ts

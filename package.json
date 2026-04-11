@@ -9,7 +9,8 @@
   },
   "files": [
     "dist/",
-    "src/parsers/phillip/extract.py"
+    "src/parsers/phillip/extract.py",
+    ".claude/"
   ],
   "scripts": {
     "build": "tsc && mkdir -p dist/parsers/phillip && cp src/parsers/phillip/extract.py dist/parsers/phillip/extract.py",
