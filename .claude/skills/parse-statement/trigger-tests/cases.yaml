@@ -1,0 +1,48 @@
+# promptfoo Skill 触发率评估用例
+# 正例：应触发 parse-statement skill
+# 负例：不应触发
+
+version: 1
+testCases:
+  # 正例（positive）
+  - description: 直接要求解析 PDF
+    input: '帮我解析这个 PDF 结单'
+    expected: triggered
+  - description: 英文要求
+    input: 'Parse this brokerage statement for me'
+    expected: triggered
+  - description: 提取交易记录
+    input: '从这个 PDF 里提取所有交易记录'
+    expected: triggered
+  - description: 转为 JSON
+    input: '把这个 PDF 转成 JSON 格式'
+    expected: triggered
+  - description: 辉立证券关键词
+    input: '我有一份辉立证券的月结单'
+    expected: triggered
+  - description: Phillip Securities
+    input: 'I have a Phillip Securities statement PDF'
+    expected: triggered
+  - description: 查看持仓
+    input: '帮我看看这份结单里的持仓情况'
+    expected: triggered
+  - description: 月结单
+    input: '这是我上个月的月结单，帮我分析一下'
+    expected: triggered
+  - description: 对账单
+    input: '我的对账单来了，帮我解析'
+    expected: triggered
+  - description: 结单解析关键词
+    input: '能帮我做结单解析吗'
+    expected: triggered
+
+  # 负例（negative）
+  - description: 一般财务问题（无 PDF）
+    input: '帮我分析一下股市行情'
+    expected: not_triggered
+  - description: 其他文档类型
+    input: '帮我解析这个 Excel 表格'
+    expected: not_triggered
+  - description: 一般提问
+    input: '什么是 IPO？'
+    expected: not_triggered

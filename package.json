@@ -1,0 +1,63 @@
+{
+  "name": "@tcos/broker-parser",
+  "version": "0.1.0",
+  "description": "Parse brokerage PDF statements into structured JSON",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "tcos-parse": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist/",
+    "src/parsers/phillip/extract.py"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint src --ext .ts",
+    "lint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint src --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test": "jest --testPathPattern='tests/(stage2|cli)\\.test\\.ts'",
+    "test:local": "jest",
+    "test:ci": "jest --testPathPattern='tests/(stage2|cli)\\.test\\.ts'"
+  },
+  "keywords": [
+    "brokerage",
+    "statement",
+    "parser",
+    "pdf",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "jest": "^29.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{js,json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biggersun/broker-parser"
+  }
+}
