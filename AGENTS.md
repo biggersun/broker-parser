@@ -32,12 +32,65 @@ npm run build         # 构建 dist/
 - **零 Python 依赖（除 extract.py）**：Python 脚本仅限 `src/parsers/phillip/extract.py`，TypeScript 层通过 `child_process.spawn` 调用
 - **严格类型**：禁止 `any`，`strict: true`
 - **CLI 隔离**：`src/cli/` 只作为 CLI 入口，不被 `src/core/` 或 `src/parsers/` 引用
+- **单向依赖**：`core/` 仅依赖 `types/`；`parsers/` 依赖 `types/`；`cli/` 依赖 `core/` 和 `parsers/`
 
 ## 敏感文件规范
 
 - `tests/fixtures/local/` — gitignored，存放真实 PDF
 - `tests/fixtures/phillip/` — 脱敏 JSON，可入库
 - `**/*.pdf` — 全局 gitignored
+- **禁止提交含真实姓名或账户号的文件**
+
+## 测试策略
+
+### CI 套件（`npm test` / `npm run test:ci`）
+
+- 运行 `stage2.test.ts` + `cli.test.ts`
+- 无需 PDF 文件，使用脱敏 JSON fixtures
+- PR 必须通过，解析成功率指标 >= 90%（实际 100%）
+
+### 本地套件（`npm run test:local`）
+
+- 包含 CI 套件 + `stage1.test.ts`
+- Stage1 测试需要 `tests/fixtures/local/` 下的真实 PDF
+- 如果本地无 PDF，Stage1 测试自动跳过
+
+### Fixture 组织
+
+```
+tests/fixtures/
+├── local/         # gitignored，放真实 PDF 用于 Stage1 测试
+└── phillip/       # 脱敏 JSON fixtures，用于 Stage2 回归测试
+    ├── user_a_*/  # 用户 A 的脱敏测试数据
+    ├── user_b_*/  # 用户 B 的脱敏测试数据
+    └── ...
+```
+
+## 新增 Parser 开发规范
+
+### 目录结构
+
+```
+src/parsers/<broker-name>/
+├── index.ts         # XxxPlugin implements IBrokerPlugin
+├── extractor.ts     # Stage1 提取器 implements IStage1Extractor
+├── formatter.ts     # Stage2 格式化器 implements IStage2Formatter
+└── extract.py       # Python 提取脚本（如需要）
+```
+
+### 实现步骤
+
+1. 实现 `IBrokerPlugin` 接口（`detect()` + 工厂方法）
+2. 实现 `IStage1Extractor.extract()` — 从 PDF 提取原始表格
+3. 实现 `IStage2Formatter.format()` — 将原始数据转为 `StatementData`
+4. 在 `src/cli/index.ts` 中注册插件：`registry.register(new XxxPlugin())`
+5. 在 `src/index.ts` 中导出插件类
+6. 添加脱敏 fixture 到 `tests/fixtures/<broker>/`
+7. 在 `tests/stage2.test.ts` 中添加回归测试用例
+
+### 参考实现
+
+辉立证券插件：`src/parsers/phillip/`
 
 ## 提交规范
 

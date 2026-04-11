@@ -1,57 +1,163 @@
 # Contributing to broker-parser
 
-感谢你对 broker-parser 的贡献！
+感谢你对 broker-parser 的贡献!
 
-## 开发环境设置
+## Development Setup
 
 ```bash
-# 克隆仓库
+# Clone the repo
 git clone https://github.com/biggersun/broker-parser.git
 cd broker-parser
 
-# 安装依赖
+# Install dependencies
 npm install
 
-# 运行测试
+# Run tests
 npm test
 ```
 
-## 开发流程
+## Development Workflow
 
-1. Fork 仓库并创建功能分支
-2. 编写代码和测试
-3. 确保所有检查通过：
+1. Fork the repo and create a feature branch
+2. Write code and tests
+3. Ensure all checks pass:
    ```bash
+   npm run typecheck
    npm run lint
    npm run format:check
-   npm run typecheck
-   npm test
+   npm run test:ci
    ```
-4. 提交 PR
+4. Submit a PR
 
-## 架构约束
+## Fixture Sanitization Rules
 
-- **零数据库依赖**：禁止引用 `prisma`、`pg`、`sequelize`、`typeorm`
-- **严格类型**：禁止使用 `any`
-- **中文注释**：代码注释使用中文
+Before adding new fixtures to `tests/fixtures/phillip/`, you **must** sanitize all personal data:
 
-## 提交规范
+| Original Value | Replace With |
+| --- | --- |
+| Real names | USER A / USER B / USER C / ... |
+| Account M596241 | M000001 |
+| Account M503022 | M000002 |
+| Other real accounts | M000003, M000004, ... |
+| HKID / passport numbers | Remove entirely |
 
-```bash
-# type: feat | fix | refactor | test | docs | chore
-git commit -m "feat: 新增功能描述"
+**Never commit files containing real names or account numbers.**
+
+All PDF files are globally excluded via `.gitignore`.
+
+## Adding a New Broker Parser
+
+### 1. Create the Plugin Directory
+
+```
+src/parsers/<broker-name>/
+├── index.ts         # XxxPlugin implements IBrokerPlugin
+├── extractor.ts     # Stage1 extractor (IStage1Extractor)
+├── formatter.ts     # Stage2 formatter (IStage2Formatter)
+└── extract.py       # Python extraction script (if needed)
 ```
 
-## 测试规范
+### 2. Implement IBrokerPlugin
 
-- `npm test` — CI 测试（Stage2 + CLI，无 PDF 依赖）
-- `npm run test:local` — 本地完整测试（需真实 PDF）
-- 测试 fixtures 放在 `tests/fixtures/phillip/`（脱敏 JSON）
-- 真实 PDF 放在 `tests/fixtures/local/`（已 gitignore）
+```typescript
+import { IStage1Extractor } from '../../types/raw';
+import { IStage2Formatter } from '../../types/formatter';
+import { IBrokerPlugin } from '../../types/plugin';
 
-## 新增券商解析器
+export class XxxPlugin implements IBrokerPlugin {
+  readonly name = 'xxx';
+  readonly displayName = 'Xxx Securities';
+  readonly supportedFileTypes = ['pdf'];
 
-1. 在 `src/parsers/<broker>/` 下创建目录
-2. 实现 `IBrokerPlugin` 接口
-3. 添加对应的测试 fixtures
-4. 更新 README.md 的支持列表
+  async detect(filePath: string): Promise<number> {
+    // Extract first page text, search for broker-specific keywords
+    // Return 0-1 confidence score (>= 0.5 to match)
+  }
+
+  createExtractor(): IStage1Extractor {
+    return new XxxExtractor();
+  }
+
+  createFormatter(config?: Record<string, unknown>): IStage2Formatter {
+    return new XxxFormatter(config);
+  }
+}
+```
+
+### 3. Implement Stage1 Extractor
+
+```typescript
+import { IStage1Extractor, RawTableData } from '../../types/raw';
+
+export class XxxExtractor implements IStage1Extractor {
+  async extract(pdfPath: string): Promise<RawTableData> {
+    // Extract raw table data from PDF
+    // Return: accountInfo, transactions[], holdings[]
+  }
+}
+```
+
+### 4. Implement Stage2 Formatter
+
+```typescript
+import { IStage2Formatter } from '../../types/formatter';
+import { RawTableData } from '../../types/raw';
+import { StatementData } from '../../types/statement';
+
+export class XxxFormatter implements IStage2Formatter {
+  async format(rawData: RawTableData): Promise<StatementData> {
+    // Convert raw table data to structured StatementData
+    // Map transaction types, normalize dates, etc.
+  }
+}
+```
+
+### 5. Register in CLI
+
+In `src/cli/index.ts`:
+
+```typescript
+import { XxxPlugin } from '../parsers/xxx';
+
+registry.register(new XxxPlugin());
+```
+
+### 6. Export from Public API
+
+In `src/index.ts`:
+
+```typescript
+export { XxxPlugin } from './parsers/xxx';
+```
+
+### 7. Add Test Fixtures (Must Be Sanitized)
+
+- Add sanitized Stage2 JSON fixtures to `tests/fixtures/<broker>/`
+- Add test cases in `tests/stage2.test.ts` referencing new fixtures
+
+## Code Standards
+
+- TypeScript strict mode, zero `any`
+- Chinese comments in code (中文注释)
+- ESLint + Prettier enforced
+- Run before committing: `npm run lint && npm run format:check`
+
+## CI Requirements
+
+Every PR must pass:
+
+- `npm run typecheck` — TypeScript type checking
+- `npm run lint` — ESLint
+- `npm run format:check` — Prettier formatting
+- `npm run test:ci` — Stage2 + CLI tests (parse success rate >= 90%)
+
+## Commit Convention
+
+```bash
+# Format: <type>: <description>
+# Types: feat | fix | refactor | test | docs | chore
+
+git commit -m "feat: add xxx broker parser"
+git commit -m "fix: handle edge case in date parsing"
+git commit -m "test: add regression fixtures for xxx"
+```
