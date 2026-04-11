@@ -12,6 +12,8 @@
  *   tcos-parse --list-parsers     # 列出支持的券商
  *   tcos-parse -v <pdf>           # 显示各阶段耗时
  *   tcos-parse -q <pdf>           # 静默模式，只输出 JSON
+ *   tcos-parse setup              # 安装运行时依赖
+ *   tcos-parse install-skill      # 安装 parse-statement Skill
  */
 
 import * as fs from 'fs';
@@ -22,6 +24,9 @@ import { Command } from 'commander';
 import { ParsePipeline } from '../core/pipeline';
 import { PluginRegistry } from '../core/registry';
 import { PhillipPlugin } from '../parsers/phillip';
+
+import { installSkill, normalizeInstallHost, SkillInstallHost } from './install-skill';
+import { setupEnvironment } from './setup';
 
 // 初始化插件注册表
 const registry = new PluginRegistry();
@@ -34,6 +39,67 @@ program
   .name('tcos-parse')
   .description('Parse brokerage PDF statements into structured JSON')
   .version('0.1.0');
+
+program
+  .command('install-skill')
+  .description('install parse-statement skill for Claude, Codex, or OpenClaw')
+  .option('--host <host>', 'install target: auto | claude | agents', 'auto')
+  .option('--force', 'replace existing target if it already exists')
+  .option('--dry-run', 'show planned install actions without writing files')
+  .action((opts: { host: SkillInstallHost; force?: boolean; dryRun?: boolean }) => {
+    try {
+      const result = installSkill({
+        host: normalizeInstallHost(opts.host),
+        force: opts.force,
+        dryRun: opts.dryRun,
+      });
+
+      console.log(`Skill source: ${result.sourcePath}`);
+      for (const action of result.actions) {
+        const hostLabel = action.host === 'claude' ? 'Claude Code' : 'Agent Skills';
+        console.log(`[${hostLabel}] ${action.message}: ${action.targetPath}`);
+      }
+
+      if (!opts.dryRun) {
+        console.log('Open a new agent session to use /parse-statement.');
+      }
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      process.stderr.write(`Error: ${message}\n`);
+      process.exit(1);
+    }
+  });
+
+program
+  .command('setup')
+  .description('install runtime dependencies required by broker-parser')
+  .option('--dry-run', 'show planned setup actions without running commands')
+  .action((opts: { dryRun?: boolean }) => {
+    try {
+      const result = setupEnvironment({
+        dryRun: opts.dryRun,
+      });
+
+      for (const action of result.actions) {
+        const prefix = `[${action.status}]`;
+        if (action.command) {
+          console.log(
+            `${prefix} ${action.message}: ${action.command} ${action.args?.join(' ') ?? ''}`
+          );
+        } else {
+          console.log(`${prefix} ${action.message}`);
+        }
+      }
+
+      if (!opts.dryRun) {
+        console.log('Setup finished. You can now run tcos-parse or install the skill.');
+      }
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      process.stderr.write(`Error: ${message}\n`);
+      process.exit(1);
+    }
+  });
 
 // 主命令：解析 PDF
 program

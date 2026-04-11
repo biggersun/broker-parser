@@ -14,46 +14,18 @@ description: 解析券商 PDF 结单文件，提取交易记录、持仓和资�
 
 ## Setup
 
-运行以下 setup 脚本确保环境就绪：
+先运行以下命令确保环境就绪：
 
 ```bash
-#!/usr/bin/env bash
-set -e
+npx @tcos/broker-parser setup
+npx @tcos/broker-parser install-skill
+```
 
-# 1. 检查并安装 CLI
-if ! command -v tcos-parse &>/dev/null; then
-  echo "Installing tcos-parse..."
-  npm install -g @tcos/broker-parser
-fi
+如果已经全局安装过 `@tcos/broker-parser`，也可以使用：
 
-# 2. 检查 Python 3
-if ! command -v python3 &>/dev/null; then
-  if command -v brew &>/dev/null; then
-    brew install python3
-  elif command -v apt-get &>/dev/null; then
-    sudo apt-get install -y python3 python3-pip
-  else
-    echo "ERROR: Cannot install Python automatically. Please install Python 3 manually."
-    exit 1
-  fi
-fi
-
-# 3. 检查并安装 pdfplumber
-if ! python3 -c "import pdfplumber" 2>/dev/null; then
-  pip3 install pdfplumber
-fi
-
-# 4. 检查 poppler（pdfplumber 底层依赖）
-if ! command -v pdftotext &>/dev/null; then
-  if command -v brew &>/dev/null; then
-    brew install poppler
-  elif command -v apt-get &>/dev/null; then
-    sudo apt-get install -y poppler-utils
-  fi
-fi
-
-echo "tcos-parse setup complete"
-tcos-parse --version
+```bash
+tcos-parse setup
+tcos-parse install-skill
 ```
 
 ## 使用方式
