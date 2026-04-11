@@ -4,4 +4,7 @@ export * from './types/statement';
 export * from './types/raw';
 export * from './types/formatter';
 export * from './types/plugin';
-// export { PhillipPlugin } from './parsers/phillip/index'; // A5 创建后启用
+export { PhillipPlugin } from './parsers/phillip';
+export { ParsePipeline } from './core/pipeline';
+export type { ParseOptions, ParseResult, ParseTimings } from './core/pipeline';
+export { PluginRegistry } from './core/registry';
