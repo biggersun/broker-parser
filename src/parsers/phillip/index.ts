@@ -45,7 +45,11 @@ export class PhillipPlugin implements IBrokerPlugin {
 
       proc.on('close', () => {
         const text = output.toUpperCase();
-        const found = text.includes('PHILLIP SECURITIES') || text.includes('辉立');
+        // 同时检查英文、简体中文（辉立）和繁体中文（輝立）
+        const found =
+          text.includes('PHILLIP SECURITIES') ||
+          text.includes('辉立') ||
+          text.includes('輝立');
         resolve(found ? 0.9 : 0);
       });
 

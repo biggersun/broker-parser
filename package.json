@@ -12,7 +12,7 @@
     "src/parsers/phillip/extract.py"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && mkdir -p dist/parsers/phillip && cp src/parsers/phillip/extract.py dist/parsers/phillip/extract.py",
     "dev": "tsc --watch",
     "lint": "ESLINT_USE_FLAT_CONFIG=false eslint src --ext .ts",
     "lint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint src --ext .ts --fix",
