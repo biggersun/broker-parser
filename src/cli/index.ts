@@ -35,6 +35,126 @@ const pipeline = new ParsePipeline(registry);
 
 const program = new Command();
 
+interface SetupCliOptions {
+  dryRun?: boolean;
+}
+
+interface InstallSkillCliOptions {
+  host: SkillInstallHost;
+  dryRun?: boolean;
+  force?: boolean;
+}
+
+/** 统一执行 setup 命令。 */
+function runSetupCommand(opts: SetupCliOptions): void {
+  try {
+    const result = setupEnvironment({
+      dryRun: opts.dryRun,
+    });
+
+    for (const action of result.actions) {
+      const prefix = `[${action.status}]`;
+      if (action.command) {
+        console.log(
+          `${prefix} ${action.message}: ${action.command} ${action.args?.join(' ') ?? ''}`
+        );
+      } else {
+        console.log(`${prefix} ${action.message}`);
+      }
+    }
+
+    if (!opts.dryRun) {
+      console.log('Setup finished. You can now run tcos-parse or install the skill.');
+    }
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    process.stderr.write(`Error: ${message}\n`);
+    process.exit(1);
+  }
+}
+
+/** 统一执行 install-skill 命令。 */
+function runInstallSkillCommand(opts: InstallSkillCliOptions): void {
+  try {
+    const result = installSkill({
+      host: normalizeInstallHost(opts.host),
+      force: opts.force,
+      dryRun: opts.dryRun,
+    });
+
+    console.log(`Skill source: ${result.sourcePath}`);
+    for (const action of result.actions) {
+      const hostLabel = action.host === 'claude' ? 'Claude Code' : 'Agent Skills';
+      console.log(`[${hostLabel}] ${action.message}: ${action.targetPath}`);
+    }
+
+    if (!opts.dryRun) {
+      console.log('Open a new agent session to use /parse-statement.');
+    }
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    process.stderr.write(`Error: ${message}\n`);
+    process.exit(1);
+  }
+}
+
+/** 为 npx 等场景提供显式参数分流，避免子命令被根命令当作 PDF 路径。 */
+function maybeHandleDirectCommand(argv: string[]): boolean {
+  const [command, ...rest] = argv;
+
+  if (command === 'setup') {
+    runSetupCommand({
+      dryRun: rest.includes('--dry-run'),
+    });
+    return true;
+  }
+
+  if (command === 'install-skill') {
+    let host: SkillInstallHost = 'auto';
+    let dryRun = false;
+    let force = false;
+
+    for (let index = 0; index < rest.length; index += 1) {
+      const token = rest[index];
+
+      if (token === '--dry-run') {
+        dryRun = true;
+        continue;
+      }
+
+      if (token === '--force') {
+        force = true;
+        continue;
+      }
+
+      if (token === '--host') {
+        const value = rest[index + 1];
+        if (!value) {
+          process.stderr.write('Error: --host requires a value.\n');
+          process.exit(1);
+        }
+        host = normalizeInstallHost(value);
+        index += 1;
+        continue;
+      }
+
+      if (token.startsWith('--host=')) {
+        host = normalizeInstallHost(token.slice('--host='.length));
+        continue;
+      }
+    }
+
+    runInstallSkillCommand({
+      host,
+      dryRun,
+      force,
+    });
+    return true;
+  }
+
+  return false;
+}
+
 program
   .name('tcos-parse')
   .description('Parse brokerage PDF statements into structured JSON')
@@ -46,60 +166,15 @@ program
   .option('--host <host>', 'install target: auto | claude | agents', 'auto')
   .option('--force', 'replace existing target if it already exists')
   .option('--dry-run', 'show planned install actions without writing files')
-  .action((opts: { host: SkillInstallHost; force?: boolean; dryRun?: boolean }) => {
-    try {
-      const result = installSkill({
-        host: normalizeInstallHost(opts.host),
-        force: opts.force,
-        dryRun: opts.dryRun,
-      });
-
-      console.log(`Skill source: ${result.sourcePath}`);
-      for (const action of result.actions) {
-        const hostLabel = action.host === 'claude' ? 'Claude Code' : 'Agent Skills';
-        console.log(`[${hostLabel}] ${action.message}: ${action.targetPath}`);
-      }
-
-      if (!opts.dryRun) {
-        console.log('Open a new agent session to use /parse-statement.');
-      }
-    } catch (err) {
-      const message = err instanceof Error ? err.message : String(err);
-      process.stderr.write(`Error: ${message}\n`);
-      process.exit(1);
-    }
-  });
+  .action((opts: { host: SkillInstallHost; force?: boolean; dryRun?: boolean }) =>
+    runInstallSkillCommand(opts)
+  );
 
 program
   .command('setup')
   .description('install runtime dependencies required by broker-parser')
   .option('--dry-run', 'show planned setup actions without running commands')
-  .action((opts: { dryRun?: boolean }) => {
-    try {
-      const result = setupEnvironment({
-        dryRun: opts.dryRun,
-      });
-
-      for (const action of result.actions) {
-        const prefix = `[${action.status}]`;
-        if (action.command) {
-          console.log(
-            `${prefix} ${action.message}: ${action.command} ${action.args?.join(' ') ?? ''}`
-          );
-        } else {
-          console.log(`${prefix} ${action.message}`);
-        }
-      }
-
-      if (!opts.dryRun) {
-        console.log('Setup finished. You can now run tcos-parse or install the skill.');
-      }
-    } catch (err) {
-      const message = err instanceof Error ? err.message : String(err);
-      process.stderr.write(`Error: ${message}\n`);
-      process.exit(1);
-    }
-  });
+  .action((opts: { dryRun?: boolean }) => runSetupCommand(opts));
 
 // 主命令：解析 PDF
 program
@@ -206,4 +281,6 @@ program
     }
   );
 
-program.parse();
+if (!maybeHandleDirectCommand(process.argv.slice(2))) {
+  program.parse();
+}
