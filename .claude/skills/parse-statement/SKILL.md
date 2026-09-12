@@ -3,104 +3,13 @@ name: parse-statement
 description: 解析券商 PDF 结单文件，提取交易记录、持仓和资产汇总为结构化 JSON
 ---
 
-## 触发条件
+# 券商 PDF 结单解析
 
-以下情况触发此 Skill：
+仅解析券商结单、交易记录、持仓和资产汇总；普通 PDF 阅读使用 PDF 能力。
 
-- 用户提供 PDF 文件，要求解析/读取/提取数据
-- 用户提到「结单」、「月结单」、「交易结单」、「对账单」、「持仓报告」、「brokerage statement」
-- 用户要求将 PDF 转为 JSON、提取交易记录、查看持仓
-- 关键词：辉立证券、Phillip Securities、结单解析、parse statement
-
-## Setup
-
-先运行以下命令确保环境就绪：
-
-```bash
-npx @tcos/broker-parser setup
-npx @tcos/broker-parser install-skill
-```
-
-如果已经全局安装过 `@tcos/broker-parser`，也可以使用：
-
-```bash
-tcos-parse setup
-tcos-parse install-skill
-```
-
-## 使用方式
-
-```bash
-# 基础解析
-tcos-parse <pdf>                    # 解析并输出 JSON 到 stdout
-tcos-parse <pdf> -o out.json        # 输出到文件
-
-# 指定券商（跳过自动检测）
-tcos-parse -b phillip <pdf>         # 指定券商为 phillip
-
-# 阶段控制
-tcos-parse <pdf> --raw              # 只输出 Stage1 原始提取数据
-tcos-parse <pdf> --no-clean         # 跳过 Stage3 清理步骤
-
-# 检测与查询
-tcos-parse --detect <pdf>           # 检测 PDF 所属券商
-tcos-parse --list-parsers           # 列出支持的券商解析器
-
-# 输出控制
-tcos-parse <pdf> -v                 # 显示各阶段耗时（输出到 stderr）
-tcos-parse <pdf> -q                 # 静默模式，只输出 JSON（无额外提示信息）
-```
-
-### 选项说明
-
-| 选项             | 说明                                   |
-| ---------------- | -------------------------------------- |
-| `-o, --output`   | 输出到文件而非 stdout                  |
-| `-b, --broker`   | 指定券商名称，跳过自动检测             |
-| `--raw`          | 只输出 Stage1 原始表格数据，不做格式化 |
-| `--no-clean`     | 跳过 Stage3 数据清理步骤               |
-| `--detect`       | 检测 PDF 所属券商及置信度              |
-| `--list-parsers` | 列出所有可用的券商解析器               |
-| `-v, --verbose`  | 显示各阶段耗时详情（输出到 stderr）    |
-| `-q, --quiet`    | 静默模式，仅输出纯 JSON                |
-
-## 输出格式
-
-完整解析结果（StatementData）：
-
-```json
-{
-  "broker": "phillip",
-  "accountCode": "M000001",
-  "statementDate": "2024-01-31",
-  "transactions": [
-    {
-      "date": "2024-01-15",
-      "ticker": "00700",
-      "name": "TENCENT",
-      "type": "BUY",
-      "quantity": 100,
-      "price": 298.4,
-      "amount": 29840.0,
-      "fee": 50.0,
-      "currency": "HKD"
-    }
-  ],
-  "holdings": [
-    {
-      "ticker": "00700",
-      "name": "TENCENT",
-      "quantity": 100,
-      "avgCost": 298.4,
-      "marketValue": 30000.0,
-      "currency": "HKD"
-    }
-  ],
-  "assets": {
-    "totalAssets": 150000.0,
-    "cashBalance": 120000.0,
-    "marketValue": 30000.0,
-    "currency": "HKD"
-  }
-}
-```
+- 优先使用已安装的 `tcos-parse`，用 `--help` 或 `--list-parsers` 核对实际 CLI 能力。每次解析不重复运行 setup 或 install-skill，也不覆盖本地技能。
+- 缺少 CLI 或解析依赖时，先识别缺失项；仅在任务包含环境安装时使用包的 setup。不要把一次解析扩展为全局安装或配置迁移。
+- 基础形式：`tcos-parse /绝对路径/结单.pdf -o /绝对路径/结果.json`；只处理本次授权的文件。
+- `-b phillip` 指定券商；`--detect` 检测支持情况；`--raw` 查看 Stage1 提取；`--no-clean` 跳过 Stage3；`-v` 输出耗时、`-q` 静默输出。以当前 `--help` 为准。
+- 需要消费字段时读取 [StatementData 样例](references/output-format.md)；核对交易、持仓、资产与原结单，缺失或不支持的字段明确报告。
+- 报告使用脱敏标识；不要将真实姓名、账户号或原 PDF 放入 Git、共享日志或外部服务。
